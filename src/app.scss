@@ -1,0 +1,30 @@
+.app {
+  height: 100vh;
+
+  .segments {
+    width: 100%;
+    height: calc(100vh - 65px);
+    background-color: saddlebrown;
+    position: relative; //make container relative and have it begin after 65px.
+    top: 65px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    scroll-snap-type: y mandatory;
+
+    > *:not(:last-child) {
+      //for each of the components
+      width: 100vw;
+      height: calc(100vh - 65px);
+      scroll-snap-align: start;
+    }
+
+    > :last-child {
+      width: 100vw;
+      height: calc(100vh - 200px);
+      scroll-snap-align: start;
+    }
+  }
+}
