@@ -1,0 +1,56 @@
+.navbar {
+  background-color: #f3f4ed;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 68px;
+  z-index: 2;
+  font-family: "futura-pt-medium";
+  font-size: 15px;
+  color: #424642;
+}
+
+.outer-div {
+  padding: 20px 26px;
+  display: flex;
+  justify-content: left;
+  font-family: "futura-pt-19", sans-serif;
+  position: relative;
+}
+
+.right-nav {
+  display: flex;
+}
+
+.right-nav-link {
+  display: flex;
+  padding-left: 20px;
+  color: #424642;
+  text-decoration: none;
+}
+
+.right-nav-link:hover {
+  color: #536162;
+}
+
+.logo-link {
+  color: #424642;
+  text-decoration: none;
+  padding-right: 65px;
+  font-size: 20px;
+}
+
+.logo-link:hover {
+  color: #536162;
+}
+
+.contactMe {
+  margin-left: auto;
+  border-radius: 1px;
+  background-color: #424642;
+  padding: 12px 18px;
+  margin-top: -0.5%;
+  color: #f3f4ed;
+  text-decoration: none;
+  vertical-align: center;
+}

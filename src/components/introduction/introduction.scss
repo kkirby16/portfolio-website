@@ -1,0 +1,72 @@
+.introduction {
+  background-color: #f3f4ed;
+  text-align: center;
+  color: #424642;
+  font-family: "futura-pt-medium-italic-regular";
+  font-weight: 200;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.greeting {
+  font-size: 60px;
+  font-family: "futura-pt-21", sans-serif;
+
+  display: flex;
+  align-items: center;
+  padding-left: 65px;
+  padding-top: 180px;
+  z-index: 3;
+}
+
+.role {
+  font-size: 90px;
+  font-family: "futura-pt-21", sans-serif;
+
+  display: flex;
+  align-items: center;
+  padding-left: 60px;
+  z-index: 3;
+}
+
+.circle1 {
+  border-radius: 100%;
+  width: 545px;
+  height: 545px;
+  left: 60.5%;
+  top: 48%;
+  z-index: 1;
+  position: absolute;
+  background: #c06014;
+}
+
+.circle2 {
+  border-radius: 100%;
+  width: 190px;
+  height: 190px;
+  z-index: 1;
+  position: absolute;
+  bottom: 54%;
+  right: 86%;
+  background: #536162;
+}
+
+.design {
+  padding-right: 200px;
+}
+
+.triangle-topleft {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 2%;
+  right: 15%;
+  z-index: 1;
+  border-top: 100px solid #536162;
+  border-right: 100px solid transparent;
+}
+
+.lightenedText {
+  color: #f3f4ed;
+}
