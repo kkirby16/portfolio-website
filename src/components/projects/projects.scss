@@ -1,3 +1,22 @@
 .projects {
   background-color: #c06014;
+  display: flex;
+  align-items: center;
+
+  .projectContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+
+    .projectDiv {
+      width: 370px;
+      height: 370px;
+      border-bottom: 2px solid black;
+      border-right: 2px solid black;
+    }
+  }
+}
+
+.projectsHeader {
 }
