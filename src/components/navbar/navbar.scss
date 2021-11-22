@@ -47,10 +47,22 @@
 .contactMe {
   margin-left: auto;
   border-radius: 1px;
-  background-color: #424642;
+  background-color: black;
   padding: 12px 18px;
   margin-top: -0.5%;
   color: #f3f4ed;
+  text-decoration: none;
+  vertical-align: center;
+}
+
+.contactMe:hover {
+  margin-left: auto;
+  border: 1px solid black;
+  border-radius: 1px;
+  background-color: #f3f4ed;
+  padding: 12px 18px;
+  margin-top: -0.5%;
+  color: black;
   text-decoration: none;
   vertical-align: center;
 }
