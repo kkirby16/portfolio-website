@@ -1,7 +1,7 @@
 .introduction {
-  background-color: #f3f4ed;
+  background-color: rgb(252, 247, 243);
   text-align: center;
-  color: #424642;
+  color: black;
   font-family: "futura-pt-medium-italic-regular";
   font-weight: 200;
   display: flex;
@@ -10,25 +10,31 @@
 }
 
 .greeting {
-  font-size: 60px;
+  font-size: 6.7vw;
   font-family: "futura-pt-21", sans-serif;
-
   display: flex;
   align-items: center;
-  padding-left: 65px;
-  padding-top: 180px;
+  padding-left: 4.514vw;
+  padding-top: 12.5vw;
   z-index: 3;
 }
 
 .role {
-  font-size: 90px;
+  font-size: 2.1vw;
   font-family: "futura-pt-21", sans-serif;
 
   display: flex;
   align-items: center;
-  padding-left: 60px;
+  padding-left: 4.75vw;
+  font-weight: 100;
   z-index: 3;
 }
+
+// //.shapeContainer {
+// flex: .7;
+// width: 400px;
+// height: 400px;
+// //}
 
 .circle1 {
   border-radius: 100%;
@@ -38,18 +44,19 @@
   top: 48%;
   z-index: 1;
   position: absolute;
-  background: #c06014;
+  background: #5a7653;
 }
 
 .circle2 {
   border-radius: 100%;
-  width: 190px;
-  height: 190px;
+  width: 80px;
+  height: 80px;
   z-index: 1;
   position: absolute;
-  bottom: 54%;
-  right: 86%;
-  background: #536162;
+  bottom: 63%;
+  right: 20%;
+  background: transparent;
+  border: 1px solid black;
 }
 
 .design {
@@ -63,10 +70,25 @@
   top: 2%;
   right: 15%;
   z-index: 1;
-  border-top: 100px solid #536162;
-  border-right: 100px solid transparent;
+  border-top: 100px solid #6e5374;
+  border-right: 100px solid rgb(252, 247, 243);
+  background-color: rgb(252, 247, 243);
 }
 
 .lightenedText {
   color: #f3f4ed;
+}
+
+.design {
+  height: 17.361vw;
+  width: 15.972vw;
+  position: absolute;
+  right: 12%;
+  bottom: 38%;
+  z-index: 3;
+}
+
+i {
+  text-align: right;
+  padding-right: 2.5px;
 }
