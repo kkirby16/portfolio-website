@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #f3f4ed;
+  background-color: rgb(252, 247, 243);
   position: fixed;
   top: 0;
   width: 100%;
@@ -7,7 +7,7 @@
   z-index: 2;
   font-family: "futura-pt-medium";
   font-size: 15px;
-  color: #424642;
+  color: black;
 }
 
 .outer-div {
@@ -25,23 +25,35 @@
 .right-nav-link {
   display: flex;
   padding-left: 20px;
-  color: #424642;
+  color: black;
   text-decoration: none;
 }
 
 .right-nav-link:hover {
-  color: #536162;
+  color: black;
 }
 
 .logo-link {
-  color: #424642;
+  color: rgb(252, 247, 243);
   text-decoration: none;
-  padding-right: 65px;
-  font-size: 20px;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 50%;
+  margin-top: -0.7%;
+  margin-right: 3%;
+  padding: 5.5px;
+  padding-right: 8px;
+  padding-left: 7px;
+  width: 23px;
+  height: 23px;
+  border: 1px solid black;
+  vertical-align: top;
+  background: black;
 }
 
 .logo-link:hover {
-  color: #536162;
+  transform: rotate(-12.5deg);
+  transition: 0.2s;
 }
 
 .contactMe {
@@ -50,7 +62,7 @@
   background-color: black;
   padding: 12px 18px;
   margin-top: -0.5%;
-  color: #f3f4ed;
+  color: rgb(252, 247, 243);
   text-decoration: none;
   vertical-align: center;
 }
@@ -59,10 +71,11 @@
   margin-left: auto;
   border: 1px solid black;
   border-radius: 1px;
-  background-color: #f3f4ed;
+  background-color: rgb(252, 247, 243);
   padding: 12px 18px;
   margin-top: -0.5%;
   color: black;
+  transition: 1;
   text-decoration: none;
   vertical-align: center;
 }
