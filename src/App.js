@@ -1,3 +1,4 @@
+import React from "react";
 import Navbar from "./components/navbar/Navbar";
 import Introduction from "./components/introduction/Introduction";
 import About from "./components/about/About";
@@ -7,6 +8,17 @@ import Contact from "./components/contact/Contact";
 import "./app.scss";
 
 function App() {
+  const [blogs, setBlogs] = React.useState([]);
+  React.useEffect(() => {
+    fetch("https://dev.to/api/articles?username=kkirby16")
+      .then((response) => response.json())
+      .then((res) => {
+        setBlogs(res);
+      });
+  }, []);
+
+  console.log(blogs);
+
   return (
     <div className="app">
       <Navbar />
@@ -14,7 +26,7 @@ function App() {
         <Introduction />
         <About />
         <Projects />
-        <Blogs />
+        <Blogs blogs={blogs} />
         <Contact />
       </div>
 
