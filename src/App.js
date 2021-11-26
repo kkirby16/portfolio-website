@@ -29,8 +29,6 @@ function App() {
         <Blogs blogs={blogs} />
         <Contact />
       </div>
-
-      {/* intro, about, projects, blogs, contact  */}
     </div>
   );
 }
