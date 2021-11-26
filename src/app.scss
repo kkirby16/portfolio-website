@@ -4,7 +4,7 @@
   .segments {
     width: 100%;
     height: calc(100vh - 65px);
-    background-color: saddlebrown;
+    background-color: rgb(252, 247, 243);
     position: relative; //make container relative and have it begin after 65px.
     top: 65px;
     scroll-behavior: smooth;
