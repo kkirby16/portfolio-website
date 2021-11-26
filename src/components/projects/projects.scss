@@ -1,5 +1,5 @@
 .projects {
-  background-color: #c06014;
+  background-color: rgb(252, 247, 243);
   display: flex;
   align-items: center;
 
@@ -10,10 +10,10 @@
     width: 100%;
 
     .projectDiv {
-      width: 370px;
-      height: 370px;
-      border-bottom: 2px solid black;
-      border-right: 2px solid black;
+      width: 25.694vw;
+      height: 25.694vw;
+      border-bottom: 0.139vw solid black;
+      border-right: 0.139vw solid black;
     }
   }
 }
