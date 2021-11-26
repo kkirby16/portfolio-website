@@ -3,15 +3,35 @@ import "./blogs.scss";
 const Blogs = (props) => {
   console.log("What are props here?:", props.blogs);
 
+  const filteredBlogs = props.blogs.filter((blog) => {
+    return (
+      blog.published_at !== "2020-03-03T00:59:06Z" &&
+      blog.published_at !== "2020-02-24T22:38:30Z"
+    );
+  });
+
+  console.log("what is this variable?:", filteredBlogs);
+
   const renderBlogs = () => {
-    return props.blogs.map((blog) => {
+    return filteredBlogs.map((blog) => {
       return (
         <div key={blog.id} className="blog">
           <a href={blog.url} className="title">
             {blog.title}
             {console.log(blog.title)}
           </a>
-          <img src={blog.social_image} alt={blog.title}></img>
+          <img
+            src={blog.social_image}
+            alt={blog.title}
+            className="blogImage"
+          ></img>
+          <p>
+            {blog.description} <a href={blog.url}>Read more.</a>
+          </p>
+          <p>
+            {blog.readable_publish_date} | {blog.tags}
+          </p>
+          <p>{blog.public_reactions_count} reactions</p>
         </div>
       );
     });
