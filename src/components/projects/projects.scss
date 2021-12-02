@@ -1,35 +1,50 @@
-.projects {
+.projectsContainer {
   background-color: rgb(252, 247, 243);
-  flex-direction: row;
-  justify-content: space-around;
   align-items: right;
   margin-left: 5%;
+  display: flex;
+  position: relative;
+  margin-left: 26px;
 
-  h1 {
-    font-size: 50px;
-    padding-bottom: 40px;
-    margin-right: 60%;
-    margin-top: 3%;
+  .project {
+    vertical-align: middle;
+    margin-right: 14px;
+  }
+
+  h2 {
+    font-family: "futura-pt-21", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    color: #6e5374;
+    margin-left: 5%;
+  }
+
+  h3 {
+    font-family: "futura-pt-21", sans-serif;
+    font-size: 15px;
+    font-weight: 100;
   }
 
   .photos {
-    max-width: 90%;
+    max-width: 92%;
     height: auto;
-    border-radius: 15px;
-    border: 1px solid rgb(219, 218, 218);
+    margin-top: 35px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: 1px solid lightgrey;
+    border-right: none;
+    display: flex;
+    align-items: center;
+    box-shadow: #5a7653 10px -20px;
   }
 }
 
-.projectsContainer {
-  width: 92%;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.project {
-  flex: 1;
+h1 {
+  font-size: 58px;
+  padding-bottom: 40px;
+  margin-left: 20%;
+  margin-top: 4%;
+  font-family: "futura-pt-21", sans-serif;
 }
 
 // .projects {
