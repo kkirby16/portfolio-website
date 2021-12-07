@@ -1,33 +1,26 @@
 .blogs {
-  background-color: rgb(252, 247, 243);
+  background-color: #6e5374;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
-}
 
-.blog {
-  max-width: 28%;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  background-color: white;
-  border: 2px solid black;
-  border-radius: 4px;
-  padding: 8px;
+  .slider {
+    position: absolute;
+    height: 350px;
+    display: flex;
+    left: 0;
 
-  color: black;
-}
+    .container {
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-.blog a.title {
-  text-decoration: none;
-  color: black;
-  font-size: 20px;
-}
-
-.blogImage {
-  height: 30%;
+      .item {
+        width: 700px;
+        height: 100%;
+      }
+    }
+  }
 }
