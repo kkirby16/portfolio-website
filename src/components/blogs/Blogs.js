@@ -39,7 +39,18 @@ const Blogs = (props) => {
 
   return (
     <div className="blogs" id="blogs">
-      {renderBlogs()}
+      <div className="slider">
+        {filteredBlogs.map((blog) => (
+          <div className="container">
+            <div className="blog">
+              <div className="left">
+                <div className="leftContainer"></div>
+              </div>
+              <div className="right"></div>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
