@@ -19,27 +19,55 @@
 
       .blog {
         display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
+        font-family: "futura-pt-21", sans-serif;
+
         width: 720px;
         height: 100%;
         background-color: rgb(252, 247, 243);
         border-radius: 10px;
 
-        .left {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          height: 100%;
-          flex: 6;
-          background-color: red;
+        .blogImage {
+          margin-top: 1%;
+          width: 370px;
+          height: auto;
+          border-radius: 2%;
         }
 
-        .right {
-          height: 100%;
-          flex: 6;
-          background-color: green;
+        .readMoreLink {
+          text-decoration: none;
+          color: black;
+          border: 1px solid black;
+          border-radius: 3px 90px;
+          padding: 2px 15px;
+          font-weight: 100;
         }
+
+        .readMoreLink:hover {
+          background-color: black;
+          color: rgb(252, 247, 243);
+          border-radius: 3px 72px;
+          animation: 4s;
+        }
+
+        // .left {
+        //   display: flex;
+        //   align-items: center;
+        //   justify-content: center;
+        //   flex-direction: column;
+        //   height: 100%;
+        //   flex: 6;
+        //   background-color: red;
+
+        // }
+
+        // .right {
+        //   height: 100%;
+        //   flex: 6;
+        //   background-color: green;
+        // }
       }
     }
   }
