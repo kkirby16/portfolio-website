@@ -39,14 +39,23 @@ const Blogs = (props) => {
 
   return (
     <div className="blogs" id="blogs">
+      <img src="assets/icons8-back-arrow-50.png" className="arrowLeft" />
+      <img src="assets/icons8-back-arrow-50.png" className="arrowRight" />
       <div className="slider">
         {filteredBlogs.map((blog) => (
           <div className="container">
             <div className="blog">
-              <div className="left">
-                <div className="leftContainer"></div>
-              </div>
-              <div className="right"></div>
+              <img src={blog.social_image} className="blogImage" />
+              <div className="imageDiv"></div>
+              <h3>{blog.title}</h3>
+              <p>{blog.description}</p>
+              <a href={blog.url} className="readMoreLink">
+                Read more.
+              </a>
+              <p>
+                {blog.readable_publish_date} | {blog.tags}
+              </p>
+              <p>{blog.public_reactions_count} reactions</p>
             </div>
           </div>
         ))}
