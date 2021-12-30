@@ -1,4 +1,5 @@
 import "./blogs.scss";
+import React, { useState } from "react";
 
 const Blogs = (props) => {
   const [currentBlog, setCurrentBlog] = useState(0);
@@ -14,6 +15,10 @@ const Blogs = (props) => {
     if (slideDirection === "left") {
       setCurrentBlog(
         currentBlog > 0 ? currentBlog - 1 : filteredBlogs.length - 1
+      );
+    } else {
+      setCurrentBlog(
+        currentBlog < filteredBlogs.length - 1 ? currentBlog + 1 : 0
       );
     }
   };
