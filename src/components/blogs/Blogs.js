@@ -1,7 +1,7 @@
 import "./blogs.scss";
 
 const Blogs = (props) => {
-  console.log("What are props here?:", props.blogs);
+  const [currentBlog, setCurrentBlog] = useState(0);
 
   const filteredBlogs = props.blogs.filter((blog) => {
     return (
@@ -10,7 +10,13 @@ const Blogs = (props) => {
     );
   });
 
-  console.log("what is this variable?:", filteredBlogs);
+  const handleClick = (slideDirection) => {
+    if (slideDirection === "left") {
+      setCurrentBlog(
+        currentBlog > 0 ? currentBlog - 1 : filteredBlogs.length - 1
+      );
+    }
+  };
 
   const renderBlogs = () => {
     return filteredBlogs.map((blog) => {
@@ -39,9 +45,20 @@ const Blogs = (props) => {
 
   return (
     <div className="blogs" id="blogs">
-      <img src="assets/icons8-back-arrow-50.png" className="arrowLeft" />
-      <img src="assets/icons8-back-arrow-50.png" className="arrowRight" />
-      <div className="slider">
+      <img
+        src="assets/icons8-back-arrow-50.png"
+        className="arrowLeft"
+        onClick={() => handleClick("left")}
+      />
+      <img
+        src="assets/icons8-back-arrow-50.png"
+        className="arrowRight"
+        onClick={() => handleClick("right")}
+      />
+      <div
+        className="slider"
+        style={{ transform: `translateX(-${currentBlog * 100}vw)` }} //won't move anywhere initially because initial state is set to 0, and 0 * 100 is still 0.
+      >
         {filteredBlogs.map((blog) => (
           <div className="container">
             <div className="blog">
