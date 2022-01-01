@@ -22,6 +22,7 @@
 }
 
 .contactIcon {
+  padding-bottom: 12px;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Raleway:300);
@@ -72,16 +73,12 @@ body {
 
 .get-in-touch {
   max-width: 650px;
-  height: 100%;
+  min-height: 80%;
   margin: 0 auto;
   position: relative;
-  overflow: hidden;
-  top: 50%;
-  padding-right: 20px;
-  padding-left: 20px;
-
+  top: 47%;
   transform: translateY(-50%);
-  background: rgb(252, 247, 243);
+  overflow: hidden;
 
   .title {
     text-align: left;
@@ -91,12 +88,11 @@ body {
     font-size: 36px;
     line-height: 48px;
     padding-bottom: 48px;
-    color: black;
   }
 }
 
 .contact-form {
-  height: 330px;
+  height: 500px;
   .form-field {
     display: flex;
     flex-direction: row;
@@ -109,7 +105,7 @@ body {
     width: 100%;
     border-width: 0 0 2px 0;
     border-color: #000;
-    background-color: rgb(252, 247, 243);
+    background-color: #707453;
     font-family: Lusitana, serif;
     font-size: 18px;
     line-height: 30px;
