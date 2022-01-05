@@ -56,6 +56,11 @@
   transition: 0.2s;
 }
 
+.logo-link:not(:hover) {
+  transform: rotate(0);
+  transition: 0.2s;
+}
+
 .contactMe {
   margin-left: auto;
   border-radius: 1px;
