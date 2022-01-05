@@ -6,6 +6,13 @@
   flex-wrap: wrap;
   position: relative;
 
+  .blogsTitle {
+    color: black;
+    position: relative;
+    bottom: 40%;
+    left: 6%;
+  }
+
   .arrowLeft {
     height: 70px;
     position: absolute;
@@ -16,6 +23,11 @@
 
   .arrowLeft:hover {
     transform: scale(1.115);
+    transition: 0.5s;
+  }
+
+  .arrowLeft:not(:hover) {
+    transform: scale(1);
     transition: 0.5s;
   }
 
@@ -30,6 +42,11 @@
 
   .arrowRight:hover {
     transform: rotate(180deg) scale(1.115);
+    transition: 0.5s;
+  }
+
+  .arrowRight:not(:hover) {
+    transform: rotate(180deg) scale(1);
     transition: 0.5s;
   }
 
