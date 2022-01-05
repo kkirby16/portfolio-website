@@ -65,6 +65,13 @@
     transition: 0.35s;
     box-shadow: #5a7653 15px -15px;
   }
+
+  .photos:not(:hover) {
+    opacity: 100%;
+    filter: brightness(100%);
+    box-shadow: #c4d3c0 26px -26px;
+    transition: 0.35s;
+  }
 }
 
 h1 {
