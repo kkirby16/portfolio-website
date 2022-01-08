@@ -19,6 +19,21 @@
       z-index: 0;
       pointer-events: none;
     }
+
+    .project-info {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: baseline;
+
+      .project-info-flex-item {
+        margin-right: 2%;
+      }
+
+      .live-site-text {
+        font-size: 18px;
+      }
+    }
   }
 
   h2 {
@@ -84,6 +99,10 @@ h1 {
 
 span {
   color: #878787;
+}
+
+.youtubeIcon {
+  font-size: 31px !important;
 }
 
 // .projects {
