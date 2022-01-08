@@ -1,4 +1,22 @@
 .about {
   background-color: rgb(252, 247, 243);
   display: flex;
+  align-items: center;
+  justify-content: right;
+
+  .about-description {
+    width: 760px;
+    margin-right: 10%;
+    margin-bottom: 8%;
+    font-size: 24px;
+    font-family: "futura-pt-21", sans-serif;
+  }
+
+  .aboutHeader {
+    position: relative;
+    margin-bottom: 30%;
+    font-size: 30px;
+    left: 6%;
+    font-family: "futura-pt-21", sans-serif;
+  }
 }
