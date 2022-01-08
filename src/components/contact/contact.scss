@@ -1,5 +1,5 @@
 .contact {
-  background-color: #707453;
+  background-color: #7d815c;
   color: rgb(252, 247, 243);
   font-family: "futura-pt-21", sans-serif;
   display: flex;
@@ -107,8 +107,8 @@ body {
     border-width: 0 0 2px 0;
     border-color: #000;
     color: rgb(252, 247, 243);
-    background-color: #707453;
-    font-family: Lusitana, serif;
+    background-color: #7d815c;
+    font-family: "futura-pt-21", sans-serif;
     font-size: 18px;
     line-height: 30px;
     font-weight: 400;
@@ -117,7 +117,7 @@ body {
   .input-text::placeholder {
     left: 20px;
     bottom: 11px;
-    font-family: Lusitana, serif;
+    font-family: "futura-pt-21", sans-serif;
     font-size: 18px;
     line-height: 26px;
     font-weight: 400;
@@ -129,8 +129,8 @@ body {
   .submit-btn {
     display: inline-block;
     background-color: black;
-    color: #fff;
-    font-family: Raleway, sans-serif;
+    color: rgb(252, 247, 243);
+    font-family: "futura-pt-21", sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 16px;
@@ -138,6 +138,15 @@ body {
     padding: 8px 16px;
     border: none;
     cursor: pointer;
+  }
+
+  .submit-btn:hover {
+    color: #6e5374;
+    transition: 0.35s;
+  }
+
+  .submit-btn:not(:hover) {
+    transition: 0.75s;
   }
 }
 
