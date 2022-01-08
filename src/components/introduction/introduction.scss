@@ -92,3 +92,12 @@ i {
   text-align: right;
   padding-right: 2.5px;
 }
+
+.spinnerArrow {
+  height: 70px;
+  width: 70px;
+  position: relative;
+  top: 130px;
+  left: 350px;
+  transform: rotate(87deg);
+}
