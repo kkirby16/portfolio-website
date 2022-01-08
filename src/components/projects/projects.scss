@@ -32,6 +32,26 @@
         margin-right: 3%;
       }
 
+      .githubIcon:hover {
+        transform: scale(1.115);
+        transition: 0.3s;
+      }
+
+      .githubIcon:not(:hover) {
+        transform: scale(1);
+        transition: 0.3s;
+      }
+
+      .youtubeIcon:hover {
+        transform: scale(1.115);
+        transition: 0.3s;
+      }
+
+      .youtubeIcon:not(:hover) {
+        transform: scale(1);
+        transition: 0.3s;
+      }
+
       .live-site-text {
         font-size: 18.5px;
       }
@@ -39,6 +59,16 @@
       .live-site-link {
         text-decoration: none;
         color: black;
+      }
+
+      .live-site-link:hover {
+        transform: scale(1.115);
+        transition: 0.5s;
+      }
+
+      .live-site-link:not(:hover) {
+        transform: scale(1);
+        transition: 0.5s;
       }
     }
   }
