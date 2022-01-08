@@ -16,6 +16,10 @@ export default function Introduction() {
       <div className="designsContainer">
         <img className="design" src="assets/taxi-715.png"></img>
       </div>
+      <img
+        src="assets/icons8-spinner-arrow-64.png"
+        className="spinnerArrow"
+      ></img>
     </div>
   );
 }
