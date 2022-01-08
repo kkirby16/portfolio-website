@@ -1,6 +1,7 @@
 import "./projects.scss";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { Icon } from "@iconify/react";
+import YouTubeIcon from "@mui/icons-material/YouTube";
 
 export default function Projects() {
   return (
@@ -8,15 +9,23 @@ export default function Projects() {
       <h1 className="projectsHeader">Projects</h1>
       <div className="projectsContainer">
         <div className="project">
-          <h2>
-            Photo Sharer{" "}
+          <div className="project-info">
+            <h2 class="project-info-flex-item">Photo Sharer </h2>
             <a
               href="https://github.com/kkirby16/photo-sharer-frontend"
               target="_blank"
+              class="project-info-flex-item"
             >
               <GitHubIcon style={{ color: "black" }} fontSize="medium" />
             </a>
-          </h2>
+            <h3 class="project-info-flex-item live-site-text">Live</h3>{" "}
+            <a href="https://youtu.be/cJb1p153Y-0" target="_blank">
+              <YouTubeIcon
+                style={{ color: "black" }}
+                className="youtubeIcon project-info-flex-item"
+              />
+            </a>
+          </div>
           <div className="imageContainer">
             <img src="assets/photo-sharer.png" alt="" className="photos" />
             <h4>Description about the project</h4>
