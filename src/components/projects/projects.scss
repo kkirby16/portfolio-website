@@ -27,11 +27,11 @@
       align-items: baseline;
 
       .project-info-flex-item {
-        margin-right: 2%;
+        margin-right: 3%;
       }
 
       .live-site-text {
-        font-size: 18px;
+        font-size: 18.5px;
       }
     }
   }
@@ -46,7 +46,7 @@
 
   h3 {
     font-family: "futura-pt-21", sans-serif;
-    font-size: 15.5px;
+    font-size: 14.8px;
     font-weight: 100;
   }
 
@@ -102,7 +102,14 @@ span {
 }
 
 .youtubeIcon {
-  font-size: 31px !important;
+  position: relative;
+  top: 7.7px;
+  font-size: 31.5px !important;
+}
+
+.githubIcon {
+  position: relative;
+  top: 3px;
 }
 
 // .projects {
