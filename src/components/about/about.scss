@@ -1,22 +1,31 @@
 .about {
   background-color: rgb(252, 247, 243);
   display: flex;
-  align-items: center;
-  justify-content: right;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: top;
+  min-height: 100vh;
+  padding-top: 12%;
+  padding-left: 36%;
 
   .about-description {
+    display: flex;
     width: 760px;
-    margin-right: 10%;
-    margin-bottom: 8%;
+
     font-size: 24px;
     font-family: "futura-pt-21", sans-serif;
+    font-weight: 100;
   }
 
   .aboutHeader {
-    position: relative;
-    margin-bottom: 30%;
+    display: flex;
     font-size: 30px;
-    left: 6%;
+
     font-family: "futura-pt-21", sans-serif;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column;
   }
 }
