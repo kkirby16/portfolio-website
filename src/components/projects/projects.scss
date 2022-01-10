@@ -63,12 +63,12 @@
 
       .live-site-link:hover {
         transform: scale(1.115);
-        transition: 0.5s;
+        transition: 0.3s;
       }
 
       .live-site-link:not(:hover) {
         transform: scale(1);
-        transition: 0.5s;
+        transition: 0.3s;
       }
     }
   }
