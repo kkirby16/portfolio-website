@@ -26,6 +26,7 @@ export default function Contact() {
       .catch((err) => {
         console.log("FAILED...", err);
       });
+    setToSend({ from_name: "", from_email: "", message: "" });
   };
 
   const handleChange = (event) => {
