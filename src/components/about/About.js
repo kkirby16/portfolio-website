@@ -4,7 +4,7 @@ export default function About() {
   return (
     <div className="about" id="about">
       <h2 className="aboutHeader">About</h2>
-      <div className="about-description">
+      <p className="about-description">
         Full-stack software developer with a background in sales and SaaS sales
         development. An adept analyst and communicator who continually aims to
         improve the user experience. Bringing 2+ years of SaaS sales development
@@ -14,8 +14,13 @@ export default function About() {
         stake-holders. Seeking frontend or full-stack development roles that
         focus on delivering valuable experiences to users, customers and
         stake-holders.
-      </div>
-      <div className="skills"></div>
+      </p>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <div className="skills">Skills:</div>
     </div>
   );
 }
