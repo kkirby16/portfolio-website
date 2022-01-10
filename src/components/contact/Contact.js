@@ -2,9 +2,10 @@ import "./contact.scss";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Icon } from "@iconify/react";
-import { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { send } from "emailjs-com";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import gsap from "gsap";
 
 export default function Contact() {
   const [toSend, setToSend] = useState({
@@ -36,6 +37,17 @@ export default function Contact() {
   const handleChange = (event) => {
     setToSend({ ...toSend, [event.target.name]: event.target.value });
   };
+
+  // let thankYouNotice = useRef(null);
+
+  // useEffect(() => {
+  //   gsap.to(thankYouNotice.current, {
+  //     duration: 0.8,
+  //     opacity: 1,
+  //     y: -20,
+  //     ease: "power3",
+  //   });
+  // }, []);
 
   return (
     <div className="contact" id="contact">
