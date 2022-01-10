@@ -1,4 +1,5 @@
 import "./about.scss";
+import { Icon } from "@iconify/react";
 
 export default function About() {
   return (
@@ -20,7 +21,28 @@ export default function About() {
       <br />
       <br />
       <br />
-      <div className="skills">Skills:</div>
+      <div className="skills">
+        <h2>Skills</h2>
+        <div>
+          <ul>
+            <Icon icon="bx:bxl-react" width="43" height="43" />{" "}
+            <Icon icon="bx:bxl-redux" width="43" height="43" />
+            <Icon icon="cib:javascript" width="43" height="43" />
+            <Icon icon="fa-brands:css3-alt" width="43" height="43" />
+            <Icon icon="cib:sass-alt" width="43" height="43" />
+            <Icon icon="cib:html5-shield" width="43" height="43" />
+            <Icon icon="cib:ruby" width="43" height="43" />
+            <Icon icon="simple-icons:rubyonrails" width="57" height="57" />
+            <Icon icon="cib:postgresql" width="43" height="43" />
+            <Icon icon="simple-icons:sqlite" width="43" height="43" />
+            <Icon icon="file-icons:sinatra" width="43" height="43" />
+            <Icon icon="logos:heroku" width="43" height="43" />
+            <Icon icon="file-icons:netlify" width="43" height="43" />
+            <Icon icon="cib:git" width="43" height="43" />
+            <Icon icon="el:wordpress" width="43" height="43" />
+          </ul>
+        </div>
+      </div>
     </div>
   );
 }
