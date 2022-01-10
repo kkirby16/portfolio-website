@@ -4,6 +4,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Icon } from "@iconify/react";
 import { useState } from "react";
 import { send } from "emailjs-com";
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
 export default function Contact() {
   const [toSend, setToSend] = useState({
@@ -11,6 +12,8 @@ export default function Contact() {
     from_email: "",
     message: "",
   });
+
+  const [thankYouMessage, setThankYouMessage] = useState(false);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -26,6 +29,7 @@ export default function Contact() {
       .catch((err) => {
         console.log("FAILED...", err);
       });
+    setThankYouMessage(true);
     setToSend({ from_name: "", from_email: "", message: "" });
   };
 
@@ -77,6 +81,12 @@ export default function Contact() {
           <div class="form-field col x-100 align-center">
             <input class="submit-btn" type="submit" value="Submit" />
           </div>
+          {thankYouMessage && (
+            <span className="thankYouMessage">
+              <CheckCircleIcon className="sentMessageIcon" /> &nbsp;&nbsp;Thank
+              you, I will reply soon!
+            </span>
+          )}
         </form>
       </section>
       <div className="contactLinks">
