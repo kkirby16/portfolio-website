@@ -7,17 +7,29 @@ import { send } from "emailjs-com";
 
 export default function Contact() {
   const [toSend, setToSend] = useState({
-    from_name: " ",
+    from_name: "",
     from_email: "",
     message: "",
   });
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    send(
+      "service_ejtyvdl",
+      "template_bmgt6jd",
+      toSend,
+      "user_vIbai5hnS9y9l0PTzvjaz"
+    )
+      .then((response) => {
+        console.log("SUCCESS!", response.status, response.text);
+      })
+      .catch((err) => {
+        console.log("FAILED...", err);
+      });
   };
 
   const handleChange = (event) => {
-    setToSend({ ...toSend, [e.target.name]: e.target.value });
+    setToSend({ ...toSend, [event.target.name]: event.target.value });
   };
 
   return (
