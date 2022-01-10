@@ -6,9 +6,20 @@ import { useState } from "react";
 import { send } from "emailjs-com";
 
 export default function Contact() {
+  const [toSend, setToSend] = useState({
+    from_name: " ",
+    from_email: "",
+    message: "",
+  });
+
   const handleSubmit = (event) => {
     event.preventDefault();
   };
+
+  const handleChange = (event) => {
+    setToSend({ ...toSend, [e.target.name]: e.target.value });
+  };
+
   return (
     <div className="contact" id="contact">
       <section class="get-in-touch">
@@ -41,9 +52,12 @@ export default function Contact() {
           <div class="form-field col x-100">
             <input
               id="message"
+              name="message"
               class="input-text js-input"
               type="text"
               placeholder="Message"
+              value={toSend.message}
+              onChange={handleChange}
               required
             />
           </div>
