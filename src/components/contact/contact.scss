@@ -148,6 +148,19 @@ body {
   .submit-btn:not(:hover) {
     transition: 0.75s;
   }
+
+  span {
+    color: black;
+    position: relative;
+    bottom: 13.5%;
+    left: 25%;
+  }
+
+  .sentMessageIcon {
+    position: relative;
+    top: 1%;
+    left: 0.5%;
+  }
 }
 
 .note {
