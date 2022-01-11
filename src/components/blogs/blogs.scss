@@ -57,11 +57,13 @@
     left: 0;
     transition: all 0.9s ease-out;
 
+
     .container {
       width: 100vw;
       display: flex;
       align-items: center;
       justify-content: center;
+      
 
       .blog {
         display: flex;
@@ -70,11 +72,12 @@
         justify-content: space-around;
         font-family: "futura-pt-21", sans-serif;
 
+
         width: 720px;
         height: 100%;
         background-color: rgb(252, 247, 243);
-        border-radius: 10px;
-
+        border-radius: 7px;
+        
         .blogImage {
           margin-top: 1%;
           width: 370px;
@@ -98,7 +101,7 @@
           color: rgb(252, 247, 243);
           border-radius: 2px;
           // border-radius: 3px 90px;
-          transform: scale(1.075);
+          transform: scale(1.065);
           transition: 0.5s;
         }
 
