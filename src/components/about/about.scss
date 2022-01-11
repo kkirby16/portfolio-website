@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .about {
   background-color: rgb(252, 247, 243);
   display: flex;
@@ -5,8 +7,17 @@
   align-items: baseline;
   justify-content: top;
   min-height: 100vh;
-  padding-top: 12%;
+  padding-top: 8%;
   padding-left: 36%;
+
+  @include mediumScreen { 
+    padding-left: 12%;
+  }
+
+  @include smallMediumScreen { 
+    padding-top: 2%;
+    padding-left: 8%;
+  }
 
   .about-description {
     display: flex;
@@ -15,6 +26,10 @@
     font-size: 24px;
     font-family: "futura-pt-21", sans-serif;
     font-weight: 100;
+
+    @include smallMediumScreen { 
+      width: 450px;
+    }
   }
 
   .aboutHeader {
@@ -28,5 +43,100 @@
     display: flex;
     flex-direction: column;
     font-family: "futura-pt-21", sans-serif;
+    font-weight: 100;
+
+    @include smallMediumScreen { 
+     position: relative; 
+     bottom: 6%;
+    }
+
+    h2 { 
+      @include smallMediumScreen { 
+      display: none;
+       }
+   
+    }
+  }
+
+  ul {
+    width: 630px;
+  }
+  ul li {
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    display: inline;
+  }
+
+  li {
+    margin-right: 2%;
+  }
+
+  .floating1 {
+    animation-name: floating;
+    animation-duration: 6s;
+    animation-delay: 0.4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 0vw;
+    margin-top: 0.347vw;
+  }
+  
+  @keyframes floating {
+    0% {
+      transform: translate(0, 0vw);
+    }
+    50% {
+      transform: translate(0, .245vw);
+    }
+    100% {
+      transform: translate(0, 0vw);
+    }
+  }
+
+
+  .floating2 {
+    animation-name: floating;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 0vw;
+    margin-top: 0.347vw;
+  }
+  
+  @keyframes floating {
+    0% {
+      transform: translate(0, 0vw);
+    }
+    50% {
+      transform: translate(0, .245vw);
+    }
+    100% {
+      transform: translate(0, -0vw);
+    }
+  }
+
+  .floating3 {
+    animation-name: floating;
+    animation-duration: 6s;
+    animation-delay: 0.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 0vw;
+    margin-top: 0.347vw;
+  }
+  
+  @keyframes floating {
+    0% {
+      transform: translate(0, 0vw);
+    }
+    50% {
+      transform: translate(0, .245vw);
+    }
+    100% {
+      transform: translate(0, 0vw);
+    }
   }
 }
+
+
