@@ -20,28 +20,78 @@ export default function About() {
       <br />
       <br />
       <br />
-      <br />
       <div className="skills">
         <h2>Skills</h2>
-        <div>
-          <ul>
-            <Icon icon="bx:bxl-react" width="43" height="43" />{" "}
-            <Icon icon="bx:bxl-redux" width="43" height="43" />
+        <ul>
+          <li>
+            <Icon icon="bx:bxl-react" width="47" height="47" />{" "}
+          </li>
+          <li>
+            <Icon icon="bx:bxl-redux" width="46" height="46" />
+          </li>
+          <li>
             <Icon icon="cib:javascript" width="43" height="43" />
+          </li>
+          <li>
             <Icon icon="fa-brands:css3-alt" width="43" height="43" />
-            <Icon icon="cib:sass-alt" width="43" height="43" />
+          </li>
+          <li>
+            <Icon icon="cib:sass-alt" width="44" height="44" />
+          </li>
+          <li>
             <Icon icon="cib:html5-shield" width="43" height="43" />
-            <Icon icon="cib:ruby" width="43" height="43" />
-            <Icon icon="simple-icons:rubyonrails" width="57" height="57" />
+          </li>
+          <li>
+            <Icon icon="cib:ruby" width="42" height="42" />
+          </li>
+          <li>
+            <Icon icon="simple-icons:rubyonrails" width="59.5" height="59.5" />
+          </li>
+          <li>
+            <Icon icon="eos-icons:api" color="black" width="47" height="47" />
+          </li>
+          <li>
             <Icon icon="cib:postgresql" width="43" height="43" />
+          </li>
+          <li>
             <Icon icon="simple-icons:sqlite" width="43" height="43" />
-            <Icon icon="file-icons:sinatra" width="43" height="43" />
-            <Icon icon="logos:heroku" width="43" height="43" />
+          </li>
+          <li>
+            <Icon icon="carbon:sql" color="black" width="45" height="45" />
+          </li>
+
+          <li>
+            <Icon icon="file-icons:sinatra" width="44" height="44" />
+          </li>
+          <li>
+            <Icon icon="cib:heroku" color="black" width="43" height="43" />
+          </li>
+          <li>
             <Icon icon="file-icons:netlify" width="43" height="43" />
+          </li>
+          <li>
+            <Icon
+              icon="simple-icons:amazons3"
+              color="black"
+              width="43"
+              height="43"
+            />
+          </li>
+          <li>
             <Icon icon="cib:git" width="43" height="43" />
+          </li>
+          <li>
             <Icon icon="el:wordpress" width="43" height="43" />
-          </ul>
-        </div>
+          </li>
+          <li>
+            <Icon
+              icon="akar-icons:vscode-fill"
+              color="black"
+              width="43"
+              height="43"
+            />
+          </li>
+        </ul>
       </div>
     </div>
   );
