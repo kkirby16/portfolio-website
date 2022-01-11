@@ -48,6 +48,8 @@
     @include smallMediumScreen { 
      position: relative; 
      bottom: 6%;
+     left: 2%;
+     width: 600px;
     }
 
     h2 { 
@@ -60,7 +62,16 @@
 
   ul {
     width: 630px;
+
+    @include smallMediumScreen { 
+        display: flex;
+        position: relative; 
+      right: 6%;
+        width: 480px !important;
+        flex-wrap: wrap;
   }
+}
+
   ul li {
     display: flex;
     align-items: baseline;
