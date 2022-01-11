@@ -1,3 +1,5 @@
+@import "./global.scss";
+
 .app {
   height: 100vh;
 
@@ -26,5 +28,21 @@
       height: calc(100vh - 200px);
       scroll-snap-align: start;
     }
+
+    > :nth-child(3) { 
+      @include smallMediumScreen  { 
+        height: 210% !important;
+        scroll-snap-align: start;
+      }
+      // @include smallMediumScreen { 
+      // > :nth-child(4) { 
+      //     height: 230% !important;
+      //     scroll-snap-align: none !important;
+      //     scroll-snap-type: none !important;
+      //   }
+       
+      
+    }
   }
+
 }
