@@ -1,0 +1,37 @@
+$mediumWidth: 1238px;
+$smallMediumWidth: 885px;
+
+
+@mixin mediumScreen { 
+    @media (max-width: #{$mediumWidth}) { 
+        @content;
+    }
+}
+
+@mixin smallMediumScreen {
+    @media (max-width: #{$smallMediumWidth}) {
+      @content;
+    }
+  }
+  
+//   @mixin mediumDevice {
+//     @media (min-width: #{$breakpoint-md}) and (max-width: #{$breakpoint-lr - 1px}) {
+//       @content;
+//     }
+//   }
+  
+//   @mixin smallDevice {
+//     @media (min-width: #{$breakpoint-sm}) and (max-width: #{$breakpoint-md - 1px}) {
+//       @content;
+//     }
+//   }
+  
+//   @mixin extraSmallDevice {
+//     @media (min-width: #{$breakpoint-xs}) and (max-width: #{$breakpoint-sm - 1px}) {
+//       @content;
+//     }
+//   }
+  
+
+
+
