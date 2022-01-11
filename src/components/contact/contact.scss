@@ -141,12 +141,15 @@ body {
   }
 
   .submit-btn:hover {
-    color: #6e5374;
+    transform: scale(1.8);
+
     transition: 0.35s;
   }
 
   .submit-btn:not(:hover) {
-    transition: 0.75s;
+    transform: scale(1);
+
+    transition: .75s;
   }
 
   span {
