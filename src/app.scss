@@ -31,8 +31,12 @@
 
     > :nth-child(3) { 
       @include smallMediumScreen  { 
-        height: 210% !important;
+        height: 270% !important;
         scroll-snap-align: start;
+      }
+
+      @include forProjectsPageSmallScreen { 
+        height: 238% !important;
       }
       // @include smallMediumScreen { 
       // > :nth-child(4) { 
