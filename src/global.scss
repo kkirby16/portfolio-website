@@ -1,5 +1,8 @@
 $mediumWidth: 1238px;
 $smallMediumWidth: 885px;
+$forProjectsPageSmallMediumMinWidth: 756px;
+$forProjectsPageSmallMediumMaxWidth: 884px;
+
 
 
 @mixin mediumScreen { 
@@ -13,6 +16,12 @@ $smallMediumWidth: 885px;
       @content;
     }
   }
+
+@mixin forProjectsPageSmallMediumScreen { 
+    @media (min-width: #{$forProjectsPageSmallMediumMinWidth}) and (max-width: #{$forProjectsPageSmallMediumMaxWidth}) { 
+        @content;
+    }
+}
   
 //   @mixin mediumDevice {
 //     @media (min-width: #{$breakpoint-md}) and (max-width: #{$breakpoint-lr - 1px}) {
