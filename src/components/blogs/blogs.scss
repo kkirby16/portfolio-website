@@ -1,3 +1,6 @@
+@import "../../global.scss";
+
+
 .blogs {
   background-color: #76597d;
   display: flex;
@@ -19,6 +22,12 @@
     z-index: 3;
     left: 11%;
     cursor: pointer;
+
+    @include blogsPageSmallScreen { 
+      left: 11%;
+      top: 9.5%;
+      height: 58px;
+    }
   }
 
   .arrowLeft:hover {
@@ -38,6 +47,12 @@
     right: 11%;
     transform: rotate(180deg);
     cursor: pointer;
+
+    @include blogsPageSmallScreen { 
+      left: 24%;
+      top: 9.5%;
+      height: 58px;
+    }
   }
 
   .arrowRight:hover {
@@ -77,6 +92,13 @@
         height: 100%;
         background-color: rgb(252, 247, 243);
         border-radius: 7px;
+
+        @include blogsPageSmallMediumScreen { 
+          width: 600px;
+          font-size: 13.8px;
+          padding-right: 10px;
+          padding-left: 10px;
+        }
         
         .blogImage {
           margin-top: 1%;
