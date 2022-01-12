@@ -2,6 +2,11 @@ $mediumWidth: 1238px;
 $smallMediumWidth: 885px;
 $forProjectsPageSmallMediumMinWidth: 756px;
 $forProjectsPageSmallMediumMaxWidth: 884px;
+$forProjectsPageSmallMinWidth: 520px;
+$forProjectsPageSmallMaxWidth: 702px;
+$blogsPageSmallMediumWidth: 1146px;
+$blogsPageSmallWidth: 979px;
+
 
 
 
@@ -22,6 +27,28 @@ $forProjectsPageSmallMediumMaxWidth: 884px;
         @content;
     }
 }
+
+@mixin forProjectsPageSmallScreen { 
+    @media (min-width: #{$forProjectsPageSmallMinWidth}) and (max-width: #{$forProjectsPageSmallMaxWidth}) { 
+        @content;
+    }
+}
+
+@mixin blogsPageSmallMediumScreen {
+    @media (max-width: #{$blogsPageSmallMediumWidth}) {
+      @content;
+    }
+  }
+
+  @mixin blogsPageSmallScreen {
+    @media (max-width: #{$blogsPageSmallWidth}) {
+      @content;
+    }
+  }
+
+  
+
+
   
 //   @mixin mediumDevice {
 //     @media (min-width: #{$breakpoint-md}) and (max-width: #{$breakpoint-lr - 1px}) {
