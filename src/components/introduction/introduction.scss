@@ -1,3 +1,6 @@
+@import "../../global.scss";
+
+
 .introduction {
   background-color: rgb(252, 247, 243);
   text-align: center;
@@ -10,17 +13,21 @@
 }
 
 .greeting {
-  font-size: 6.8vw;
+  font-size: clamp(3.15rem, 6.8vw, 7.0vw);
   font-family: "futura-pt-21", sans-serif;
   display: flex;
   align-items: center;
   padding-left: 4.514vw;
   padding-top: 12.5vw;
   z-index: 3;
+
+  @include smallMediumScreen { 
+    padding-top: 30vw;
+  }
 }
 
 .role {
-  font-size: 1.9vw;
+  font-size: clamp(1.03rem, 1.9vw, 2.1vw);
   font-family: "futura-pt-21", sans-serif;
 
   display: flex;
