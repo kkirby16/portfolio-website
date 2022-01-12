@@ -5,7 +5,11 @@ $forProjectsPageSmallMediumMaxWidth: 884px;
 $forProjectsPageSmallMinWidth: 520px;
 $forProjectsPageSmallMaxWidth: 702px;
 $blogsPageSmallMediumWidth: 1146px;
-$blogsPageSmallWidth: 979px;
+$blogsPageSmallWidth: 1012px;
+
+$blogsPageSmallerWidth: 681px; 
+
+$blogsPageForIphoneWidth: 414px;
 
 
 
@@ -44,7 +48,22 @@ $blogsPageSmallWidth: 979px;
     @media (max-width: #{$blogsPageSmallWidth}) {
       @content;
     }
+}
+
+    @mixin blogsPageSmallerScreen {
+        @media (max-width: #{$blogsPageSmallerWidth}) {
+          @content;
+        }
   }
+
+  @mixin blogsPageForIphoneScreens {
+    @media (max-width: #{$blogsPageForIphoneWidth}) {
+      @content;
+    }
+}
+
+
+
 
   
 
