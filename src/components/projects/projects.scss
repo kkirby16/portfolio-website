@@ -2,13 +2,11 @@
 
 .projects { 
   overflow-y: hidden;
-
 }
 
 .projectsContainer {
   background-color: rgb(252, 247, 243);
   align-items: right;
-  margin-left: 5%;
   display: flex;
   position: relative;
   margin-left: 26px;
@@ -16,8 +14,9 @@
 @include smallMediumScreen { 
   display: flex; 
   flex-direction: column;
-  justify-content:  !important;
-align-items: center !important;
+  justify-content: center !important;
+  align-items: right !important;
+  margin-left: 9%;
 }
 
   .project {
@@ -26,9 +25,12 @@ align-items: center !important;
     position: relative;
 
     @include smallMediumScreen { 
-      margin-bottom: 10%;
+      margin-bottom: 19%;
     }
 
+    @include forProjectsPageSmallMediumScreen { 
+      margin-bottom: 7%;
+    }
     h4 {
       position: absolute;
       font-size: clamp(1.5vw, 1.736vw, 19vw);
@@ -45,6 +47,7 @@ align-items: center !important;
       flex-direction: row;
       justify-content: flex-start;
       align-items: baseline;
+      overflow-y: hidden;
 
       .project-info-flex-item {
         margin-right: 3%;
@@ -126,7 +129,7 @@ align-items: center !important;
     z-index: 1;
 
     @include smallMediumScreen { 
-      max-width: 62%;
+      max-width: 82%;
     }
   }
 
@@ -163,6 +166,16 @@ span {
   position: relative;
   top: 7.7px;
   font-size: 31.5px !important;
+
+  @include smallMediumScreen { 
+    font-size: 35px;
+   
+
+  }
+}
+
+a { 
+  overflow: hidden;
 }
 
 .githubIcon {
