@@ -10,10 +10,15 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @include iPhoneXrScreen { 
+    justify-content: flex-start;
+    padding-top: 15.5%;
+  }
 }
 
 .greeting {
-  font-size: clamp(3.15rem, 6.8vw, 7.0vw);
+  font-size: clamp(2.5rem, 6.8vw, 7.0vw);
   font-family: "futura-pt-21", sans-serif;
   display: flex;
   align-items: center;
@@ -24,10 +29,14 @@
   @include smallMediumScreen { 
     padding-top: 30vw;
   }
+
+  @include iPhoneXrScreen { 
+    align-items: left !important;
+  }
 }
 
 .role {
-  font-size: clamp(1.03rem, 1.9vw, 2.1vw);
+  font-size: clamp(1.08rem, 1.9vw, 2.1vw);
   font-family: "futura-pt-21", sans-serif;
 
   display: flex;
@@ -35,6 +44,11 @@
   padding-left: 4.75vw;
   font-weight: 100;
   z-index: 3;
+
+
+  @include iPhoneXrScreen { 
+    align-items: left;
+  }
 }
 
 // //.shapeContainer {
@@ -45,8 +59,8 @@
 
 .circle1 {
   border-radius: 100%;
-  width: 545px;
-  height: 545px;
+  width: 525px;
+  height: 525px;
   left: 60.5%;
   top: 48%;
   z-index: 1;
@@ -56,18 +70,212 @@
 
 .circle2 {
   border-radius: 100%;
-  width: 80px;
-  height: 80px;
+  width: 35px;
+  height: 35px;
   z-index: 1;
   position: absolute;
-  bottom: 63%;
+  bottom: 66%;
+  right: 16%;
+  background: transparent;
+  border: 1px solid black;
+
+  @include iPhoneXrScreen { 
+    right: 3%;
+    bottom: 62%;
+  }
+}
+
+.circle3 {
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  z-index: 1;
+  position: absolute;
+  bottom: 66%;
   right: 20%;
   background: transparent;
   border: 1px solid black;
+
+  @include iPhoneXrScreen { 
+    right: 25%;
+    bottom: 62%;
+
+  }
 }
 
+.circle4 {
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  z-index: 1;
+  position: absolute;
+  bottom: 66%;
+  right: 24%;
+  background: transparent;
+  border: 1px solid black;
+
+  @include iPhoneXrScreen { 
+  right: 14%;
+  bottom: 62%;
+
+  }
+}
+
+.circle5 {
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  z-index: 1;
+  position: absolute;
+  bottom: 58%;
+  right: 16%;
+  background: transparent;
+  border: 1px solid black;
+
+  @include iPhoneXrScreen { 
+    right: 25%;
+    bottom: 56%;
+  }
+}
+
+.circle6 {
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  z-index: 1;
+  position: absolute;
+  bottom: 58%;
+  right: 20%;
+  background: transparent;
+  border: 1px solid black;
+
+  @include iPhoneXrScreen { 
+    right: 14%;
+    bottom: 56%;
+  }
+}
+
+.circle7 {
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  z-index: 1;
+  position: absolute;
+  bottom: 58%;
+  right: 24%;
+  background: transparent;
+  border: 1px solid black;
+
+  @include iPhoneXrScreen { 
+    right: 3%;
+    bottom: 56%;
+  }
+}
+
+.circle8 {
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  z-index: 1;
+  position: absolute;
+  bottom: 50%;
+  right: 16%;
+  background: transparent;
+  border: 1px solid black;
+
+  @include iPhoneXrScreen { 
+    right: 25%;
+  }
+}
+
+.circle9 {
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  z-index: 1;
+  position: absolute;
+  bottom: 50%;
+  right: 20%;
+  background: transparent;
+  border: 1px solid black;
+
+  @include iPhoneXrScreen { 
+    right: 13.7%;
+  }
+}
+
+.circle10 {
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  z-index: 1;
+  position: absolute;
+  bottom: 50%;
+  right: 24%;
+  background: transparent;
+  border: 1px solid black;
+
+  @include iPhoneXrScreen { 
+    right: 3%;
+  }
+}
+
+.circle11 {
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  z-index: 1;
+  position: absolute;
+  bottom: 50%;
+  right: 12%;
+  background: transparent;
+  border: 1px solid black;
+
+  @include iPhoneXrScreen { 
+    right: 36%;
+  }
+}
+
+.circle12 {
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  z-index: 1;
+  position: absolute;
+  bottom: 58%;
+  right: 12%;
+  background: transparent;
+  border: 1px solid black;
+
+  @include iPhoneXrScreen { 
+    right: 36%;
+    bottom: 56%;
+  }
+}
+
+.circle13 {
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  z-index: 1;
+  position: absolute;
+  bottom: 66%;
+  right: 12%;
+  background: transparent;
+  border: 1px solid black;
+
+  @include iPhoneXrScreen { 
+  right: 36%;
+  bottom: 62%;
+  }
+}
+
+
+
+
 .design {
-  padding-right: 200px;
+  left: 50%;
+  top: 13%;
 }
 
 .triangle-topleft {
@@ -100,11 +308,11 @@ i {
   padding-right: 2.5px;
 }
 
-.spinnerArrow {
+.diagonalArrow {
   height: 70px;
   width: 70px;
   position: relative;
-  top: 130px;
-  left: 350px;
-  transform: rotate(87deg);
+  top: 110px;
+  left: 360px;
+  transform: rotate(10deg);
 }
