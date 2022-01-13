@@ -11,6 +11,8 @@ $blogsPageSmallerWidth: 681px;
 
 $blogsPageForIphoneWidth: 414px;
 $navbarSmallMediumWidth: 703px;
+$contactSmallWidth: 783px;
+$iPhoneXrWidth: 414px;
 
 
 
@@ -71,6 +73,18 @@ $navbarSmallMediumWidth: 703px;
 
 @mixin forProjectsPageSmallMediumMaxScreen {
     @media (max-width: #{$forProjectsPageSmallMediumMaxWidth}) {
+      @content;
+    }
+}
+
+@mixin contactSmallScreen {
+    @media (max-width: #{$contactSmallWidth}) {
+      @content;
+    }
+}
+
+@mixin iPhoneXrScreen {
+    @media (max-width: #{$iPhoneXrWidth}) {
       @content;
     }
 }
