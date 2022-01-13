@@ -9,16 +9,29 @@ export default function Introduction() {
         <i className="frontendWord">frontend</i>&nbsp;focus.
       </div>
       <div className="shapeContainer">
-        <div className="circle1"></div>
-        <div className="circle2"></div>
-        <div className="triangle-topleft"></div>
+         <div className="circle1"></div>
+         <div className="circle2"></div>
+         <div className="circle3"></div>
+         <div className="circle4"></div> 
+         <div className="circle5"></div> 
+         <div className="circle6"></div>
+         <div className="circle7"></div>
+         <div className="circle8"></div>
+         <div className="circle9"></div>
+         <div className="circle10"></div>
+         <div className="circle11"></div>
+         <div className="circle12"></div>
+         <div className="circle13"></div>
+
+
+         <div className="triangle-topleft"></div>
       </div>
       <div className="designsContainer">
         <img className="design" src="assets/taxi-715.png"></img>
       </div>
       <img
-        src="assets/icons8-spinner-arrow-64.png"
-        className="spinnerArrow"
+        src="assets/icons8-diagonal-arrow-64.png"
+        className="diagonalArrow"
       ></img>
     </div>
   );
