@@ -10,13 +10,14 @@ $blogsPageSmallWidth: 1012px;
 $blogsPageSmallerWidth: 681px; 
 
 $blogsPageForIphoneWidth: 414px;
+$navbarSmallMediumWidth: 703px;
 
 
 
 
 @mixin mediumScreen { 
     @media (max-width: #{$mediumWidth}) { 
-        @content;
+       @content;
     }
 }
 
@@ -24,7 +25,7 @@ $blogsPageForIphoneWidth: 414px;
     @media (max-width: #{$smallMediumWidth}) {
       @content;
     }
-  }
+}
 
 @mixin forProjectsPageSmallMediumScreen { 
     @media (min-width: #{$forProjectsPageSmallMediumMinWidth}) and (max-width: #{$forProjectsPageSmallMediumMaxWidth}) { 
@@ -42,7 +43,7 @@ $blogsPageForIphoneWidth: 414px;
     @media (max-width: #{$blogsPageSmallMediumWidth}) {
       @content;
     }
-  }
+}
 
   @mixin blogsPageSmallScreen {
     @media (max-width: #{$blogsPageSmallWidth}) {
@@ -50,17 +51,32 @@ $blogsPageForIphoneWidth: 414px;
     }
 }
 
-    @mixin blogsPageSmallerScreen {
-        @media (max-width: #{$blogsPageSmallerWidth}) {
-          @content;
-        }
-  }
+@mixin blogsPageSmallerScreen {
+    @media (max-width: #{$blogsPageSmallerWidth}) {
+        @content;
+    }
+}
 
-  @mixin blogsPageForIphoneScreens {
+@mixin blogsPageForIphoneScreens {
     @media (max-width: #{$blogsPageForIphoneWidth}) {
       @content;
     }
 }
+
+@mixin navbarSmallMediumScreen {
+    @media (max-width: #{$navbarSmallMediumWidth}) {
+      @content;
+    }
+}
+
+@mixin forProjectsPageSmallMediumMaxScreen {
+    @media (max-width: #{$forProjectsPageSmallMediumMaxWidth}) {
+      @content;
+    }
+}
+
+
+
 
 
 
