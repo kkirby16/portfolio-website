@@ -40,6 +40,13 @@
       margin-right: 10%;
       z-index: 0;
       pointer-events: none;
+      
+      @include forProjectsPageSmallMediumMaxScreen { 
+        width: 57vw; 
+        font-size: 3.2vw;
+        top: 45%;
+        word-wrap: break-word;
+      }
     }
 
     .project-info {
@@ -134,7 +141,7 @@
   }
 
   .photos:hover {
-    filter: brightness(28%);
+    filter: brightness(29%);
     opacity: 0.3;
     opacity: 100%;
     z-index: 0;
