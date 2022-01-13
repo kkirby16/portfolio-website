@@ -1,3 +1,6 @@
+@import "../../global.scss";
+
+
 .contact {
   background-color: #7d815c;
   color: rgb(252, 247, 243);
@@ -113,6 +116,11 @@ body {
     line-height: 30px;
     font-weight: 400;
     outline: none;
+
+    @include contactSmallScreen { 
+      width: 70%;
+      margin-left: 30px;
+    }
   }
   .input-text::placeholder {
     left: 20px;
@@ -138,18 +146,24 @@ body {
     padding: 8px 16px;
     border: none;
     cursor: pointer;
+    overflow-y: hidden;
+
+    @include contactSmallScreen { 
+    margin-left: 5.5%;
+    }
+
   }
 
   .submit-btn:hover {
-    transform: scale(1.8);
+    // transform: scale(1.8);
 
-    transition: 0.35s;
+    // transition: 0.35s;
   }
 
   .submit-btn:not(:hover) {
-    transform: scale(1);
+    // transform: scale(1);
 
-    transition: .75s;
+    // transition: .75s;
   }
 
   span {
