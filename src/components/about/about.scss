@@ -27,7 +27,7 @@
     font-size: 24px;
     font-family: "futura-pt-21", sans-serif;
     font-weight: 100;
-
+    z-index: 1;
     @include smallMediumScreen { 
       width: 450px;
       font-size: 20px;
@@ -87,7 +87,7 @@
 
   .floating1 {
     animation-name: floating;
-    animation-duration: 5.8s;
+    animation-duration: 5.6s;
     animation-delay: 0.4s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
@@ -100,7 +100,7 @@
       transform: translate(0, 0vw);
     }
     50% {
-      transform: translate(0, .26vw);
+      transform: translate(0, .27vw);
     }
     100% {
       transform: translate(0, 0vw);
@@ -110,7 +110,7 @@
 
   .floating2 {
     animation-name: floating;
-    animation-duration: 5.8s;
+    animation-duration: 5.6s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     margin-left: 0vw;
@@ -122,7 +122,7 @@
       transform: translate(0, 0vw);
     }
     50% {
-      transform: translate(0, .26vw);
+      transform: translate(0, .27vw);
     }
     100% {
       transform: translate(0, -0vw);
@@ -131,7 +131,7 @@
 
   .floating3 {
     animation-name: floating;
-    animation-duration: 5.8s;
+    animation-duration: 5.6s;
     animation-delay: 0.8s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
@@ -144,7 +144,7 @@
       transform: translate(0, 0vw);
     }
     50% {
-      transform: translate(0, .26vw);
+      transform: translate(0, .32vw);
     }
     100% {
       transform: translate(0, 0vw);
