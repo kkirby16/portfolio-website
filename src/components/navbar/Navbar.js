@@ -7,7 +7,6 @@ export default function Navbar() {
         <a className="logo-link" href="#intro">
           KK
         </a>
-
         <div className="right-nav">
           <a className="right-nav-link" href="#about">
             About
@@ -21,6 +20,9 @@ export default function Navbar() {
         </div>
         <a className="contactMe" href="#contact">
           Contact Me
+        </a>
+        <a className="contactMeMobile" href="#contact">
+          Contact
         </a>
       </div>
     </div>
