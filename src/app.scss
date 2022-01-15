@@ -38,6 +38,10 @@
       @include forProjectsPageSmallScreen { 
         height: 238% !important;
       }
+
+      @include iPhoneXrScreen { 
+        height: 160% !important;
+      }
       // @include smallMediumScreen { 
       // > :nth-child(4) { 
       //     height: 230% !important;
