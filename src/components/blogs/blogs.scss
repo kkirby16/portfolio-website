@@ -89,6 +89,10 @@
     left: 0;
     transition: all 0.9s ease-out;
 
+    @include iPhoneXrScreen { 
+      height: 400px;
+    }
+
 
     .container {
       width: 100vw;
@@ -109,6 +113,8 @@
         height: 100%;
         background-color: rgb(252, 247, 243);
         border-radius: 7px;
+        padding-right: 12px;
+        padding-left: 12px;
 
         @include blogsPageSmallMediumScreen { 
           width: 600px;
@@ -123,12 +129,22 @@
           padding-right: 18px;
           padding-left: 18px;
         }
-        
+
+        @include iPhoneXrScreen { 
+          width: 320px;
+          font-size: 15.1px;
+        }
+
         .blogImage {
           margin-top: 1%;
           width: 370px;
           height: auto;
           border-radius: 2%;
+
+          @include iPhoneXrScreen { 
+            width: 305px;
+            height: auto;
+          }
         }
 
         .readMoreLink {
