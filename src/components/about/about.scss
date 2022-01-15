@@ -32,6 +32,11 @@
       width: 450px;
       font-size: 20px;
     }
+
+    @include iPhoneXrScreen { 
+      width: 330px; 
+      font-size: 19.5px;
+    }
   }
 
   .aboutHeader {
@@ -71,6 +76,12 @@
       right: 6%;
         width: 480px !important;
         flex-wrap: wrap;
+  }
+
+  @include iPhoneXrScreen { 
+    display: flex;
+    width: 350px !important;
+    flex-wrap: wrap;
   }
 }
 
