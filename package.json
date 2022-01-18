@@ -5,6 +5,7 @@
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
+    "@mapbox/node-pre-gyp": "^1.0.8",
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
     "@mui/icons-material": "^5.2.5",
@@ -14,6 +15,7 @@
     "@testing-library/user-event": "^12.1.10",
     "emailjs-com": "^3.2.0",
     "gsap": "^3.9.1",
+    "netlify-cli": "^8.9.6",
     "node-sass": "^4.14.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -27,7 +29,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "netlify": "netlify"
   },
   "eslintConfig": {
     "extends": [
