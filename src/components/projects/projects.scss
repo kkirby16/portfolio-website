@@ -1,6 +1,6 @@
 @import "../../global.scss";
 
-.projects { 
+.projects {
   overflow-y: hidden;
 }
 
@@ -11,24 +11,24 @@
   position: relative;
   margin-left: 26px;
 
-@include smallMediumScreen { 
-  display: flex; 
-  flex-direction: column;
-  justify-content: center !important;
-  align-items: right !important;
-  margin-left: 9%;
-}
+  @include smallMediumScreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: right !important;
+    margin-left: 9%;
+  }
 
   .project {
     vertical-align: middle;
     margin-right: 14px;
     position: relative;
 
-    @include smallMediumScreen { 
+    @include smallMediumScreen {
       margin-bottom: 19%;
     }
 
-    @include forProjectsPageSmallMediumScreen { 
+    @include forProjectsPageSmallMediumScreen {
       margin-bottom: 7%;
     }
     h4 {
@@ -40,9 +40,9 @@
       margin-right: 10%;
       z-index: 0;
       pointer-events: none;
-      
-      @include forProjectsPageSmallMediumMaxScreen { 
-        width: 57vw; 
+
+      @include forProjectsPageSmallMediumMaxScreen {
+        width: 57vw;
         font-size: 3.2vw;
         top: 45%;
         word-wrap: break-word;
@@ -135,14 +135,13 @@
     position: relative;
     z-index: 1;
 
-    @include smallMediumScreen { 
+    @include smallMediumScreen {
       max-width: 82%;
     }
   }
 
   .photos:hover {
     filter: brightness(29%);
-    opacity: 0.3;
     opacity: 100%;
     z-index: 0;
     transition: 0.35s;
@@ -174,14 +173,12 @@ span {
   top: 7.7px;
   font-size: 31.5px !important;
 
-  @include smallMediumScreen { 
+  @include smallMediumScreen {
     font-size: 35px;
-   
-
   }
 }
 
-a { 
+a {
   overflow: hidden;
 }
 
