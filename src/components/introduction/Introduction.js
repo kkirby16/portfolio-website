@@ -26,10 +26,10 @@ export default function Introduction() {
         <div className="triangle-topleft"></div>
       </div>
       <div className="designsContainer">
-        <img className="design" src="build/assets/taxi-715.png"></img>
+        <img className="design" src="public/taxi-715.png"></img>
       </div>
       <img
-        src="assets/icons8-diagonal-arrow-64.png"
+        src="public/icons8-diagonal-arrow-64.png"
         className="diagonalArrow"
       ></img>
     </div>
