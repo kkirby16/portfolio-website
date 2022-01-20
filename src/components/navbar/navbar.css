@@ -1,0 +1,158 @@
+.navbar {
+  background-color: #fcf7f3;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 68px;
+  z-index: 2;
+  font-family: "futura-pt-medium";
+  font-size: 15px !important;
+  color: black;
+}
+
+@media (max-width: 414px) {
+  .navbar {
+    height: 90px;
+    font-size: 19px !important;
+    width: 100%;
+  }
+}
+
+.outer-div {
+  padding: 20px 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  font-family: "futura-pt-19", sans-serif;
+  position: relative;
+}
+
+@media (max-width: 414px) {
+  .outer-div {
+    padding: 35px 26px;
+  }
+}
+
+.right-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.right-nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.right-nav-link:hover {
+  color: black;
+}
+
+.logo-link {
+  color: #fcf7f3;
+  text-decoration: none;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 50%;
+  margin-top: -0.7%;
+  margin-right: 3%;
+  padding: 5.5px;
+  padding-right: 8px;
+  padding-left: 7px;
+  width: 23px;
+  height: 23px;
+  border: 1px solid black;
+  vertical-align: top;
+  background: black;
+}
+
+.logo-link:hover {
+  -webkit-transform: rotate(-12.5deg);
+          transform: rotate(-12.5deg);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+@media (max-width: 703px) {
+  .logo-link:hover {
+    -webkit-transform: none;
+            transform: none;
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+.logo-link:not(:hover) {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  -webkit-transition: 0.81s;
+  transition: 0.81s;
+}
+
+@media (max-width: 703px) {
+  .logo-link:not(:hover) {
+    -webkit-transform: none;
+            transform: none;
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+
+.contactMe {
+  margin-left: auto;
+  border-radius: 1px;
+  background-color: black;
+  padding: 12px 18px;
+  margin-top: -0.5%;
+  color: #fcf7f3;
+  text-decoration: none;
+  vertical-align: center;
+}
+
+@media (max-width: 414px) {
+  .contactMe {
+    display: none;
+  }
+}
+
+.contactMeMobile {
+  display: none !important;
+  margin-left: auto;
+  border-radius: 1px;
+  background-color: black;
+  padding: 0px;
+  margin-top: 0px;
+  margin-left: none;
+  color: #fcf7f3;
+  text-decoration: none;
+  vertical-align: center;
+}
+
+@media (max-width: 414px) {
+  .contactMeMobile {
+    display: inline-block !important;
+    padding: 5px 5.5px;
+    margin-top: -1.5%;
+    margin-bottom: 1%;
+  }
+}
+
+.contactMe:hover {
+  margin-left: auto;
+  border: 1px solid black;
+  border-radius: 1px;
+  background-color: #fcf7f3;
+  padding: 12px 18px;
+  margin-top: -0.5%;
+  color: black;
+  text-decoration: none;
+  vertical-align: center;
+}
+/*# sourceMappingURL=navbar.css.map */

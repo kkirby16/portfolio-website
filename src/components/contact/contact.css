@@ -1,0 +1,288 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300);
+@import url(https://fonts.googleapis.com/css?family=Lusitana:400,700);
+.contact {
+  background-color: #7d815c;
+  color: #fcf7f3;
+  font-family: "futura-pt-21", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: top;
+      -ms-flex-pack: top;
+          justify-content: top;
+}
+
+.contactHeader {
+  font-size: 90px;
+  list-style-type: none;
+  margin-top: 4%;
+}
+
+.contactLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 300px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.contactIcon {
+  padding-bottom: 12px;
+}
+
+.align-center {
+  text-align: center;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  position: relative;
+}
+
+.row {
+  margin: -20px 0;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row .col {
+  padding: 0 20px;
+  float: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.row .col.x-50 {
+  width: 50%;
+}
+
+.row .col.x-100 {
+  width: 100%;
+}
+
+.content-wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
+.get-in-touch {
+  max-width: 650px;
+  min-height: 80%;
+  margin: 0 auto;
+  position: relative;
+  top: 47%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  overflow: hidden;
+}
+
+.get-in-touch .title {
+  text-align: left;
+  font-family: Raleway, sans-serif;
+  color: #fcf7f3;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 36px;
+  line-height: 48px;
+  padding-bottom: 48px;
+}
+
+.contact-form {
+  height: 500px;
+}
+
+.contact-form .form-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin: 32px 0;
+}
+
+.contact-form .input-text {
+  display: block;
+  width: 100%;
+  border-width: 0 0 2px 0;
+  border-color: #000;
+  color: #fcf7f3;
+  background-color: #7d815c;
+  font-family: "futura-pt-21", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  outline: none;
+}
+
+@media (max-width: 783px) {
+  .contact-form .input-text {
+    width: 70%;
+    margin-left: 30px;
+  }
+}
+
+.contact-form .input-text::-webkit-input-placeholder {
+  left: 20px;
+  bottom: 11px;
+  font-family: "futura-pt-21", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #d0d0d0;
+  cursor: text;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+
+.contact-form .input-text:-ms-input-placeholder {
+  left: 20px;
+  bottom: 11px;
+  font-family: "futura-pt-21", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #d0d0d0;
+  cursor: text;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+
+.contact-form .input-text::-ms-input-placeholder {
+  left: 20px;
+  bottom: 11px;
+  font-family: "futura-pt-21", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #d0d0d0;
+  cursor: text;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+
+.contact-form .input-text::placeholder {
+  left: 20px;
+  bottom: 11px;
+  font-family: "futura-pt-21", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #d0d0d0;
+  cursor: text;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+
+.contact-form .submit-btn {
+  display: inline-block;
+  background-color: black;
+  color: #fcf7f3;
+  font-family: "futura-pt-21", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  overflow-y: hidden;
+}
+
+@media (max-width: 783px) {
+  .contact-form .submit-btn {
+    margin-left: 5.5%;
+  }
+}
+
+.contact-form span {
+  color: black;
+  opacity: 1;
+  position: relative;
+  bottom: 13.5%;
+  left: 25%;
+  animation: fadeIn linear 1.7s;
+  -webkit-animation: fadeIn linear 1.7s;
+  -moz-animation: fadeIn linear 1.7s;
+  -o-animation: fadeIn linear 1.7s;
+  -ms-animation: fadeIn linear 1.7s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.contact-form .sentMessageIcon {
+  position: relative;
+  top: 1%;
+  left: 0.5%;
+}
+
+.note {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-family: Lusitana, serif;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.note .link {
+  color: #888;
+  text-decoration: none;
+}
+
+.note .link:hover {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=contact.css.map */

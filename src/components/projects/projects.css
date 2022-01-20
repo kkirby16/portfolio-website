@@ -1,0 +1,245 @@
+.projects {
+  overflow-y: hidden;
+}
+
+.projectsContainer {
+  background-color: #fcf7f3;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-left: 26px;
+}
+
+@media (max-width: 885px) {
+  .projectsContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    -webkit-box-align: right !important;
+        -ms-flex-align: right !important;
+            align-items: right !important;
+    margin-left: 9%;
+  }
+}
+
+.projectsContainer .project {
+  vertical-align: middle;
+  margin-right: 14px;
+  position: relative;
+}
+
+@media (max-width: 885px) {
+  .projectsContainer .project {
+    margin-bottom: 19%;
+  }
+}
+
+@media (min-width: 756px) and (max-width: 884px) {
+  .projectsContainer .project {
+    margin-bottom: 7%;
+  }
+}
+
+.projectsContainer .project h4 {
+  position: absolute;
+  font-size: clamp(1.5vw, 1.736vw, 19vw);
+  top: 41%;
+  left: 5%;
+  margin-left: 5%;
+  margin-right: 10%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+@media (max-width: 884px) {
+  .projectsContainer .project h4 {
+    width: 57vw;
+    font-size: 3.2vw;
+    top: 45%;
+    word-wrap: break-word;
+  }
+}
+
+.projectsContainer .project .project-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  overflow-y: hidden;
+}
+
+.projectsContainer .project .project-info .project-info-flex-item {
+  margin-right: 3%;
+}
+
+.projectsContainer .project .project-info .githubIcon:hover {
+  -webkit-transform: scale(1.115);
+          transform: scale(1.115);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.projectsContainer .project .project-info .githubIcon:not(:hover) {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.projectsContainer .project .project-info .youtubeIcon:hover {
+  -webkit-transform: scale(1.115);
+          transform: scale(1.115);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.projectsContainer .project .project-info .youtubeIcon:not(:hover) {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.projectsContainer .project .project-info .live-site-text {
+  font-size: 18.5px;
+}
+
+.projectsContainer .project .project-info .live-site-link {
+  text-decoration: none;
+  color: black;
+}
+
+.projectsContainer .project .project-info .live-site-link:hover {
+  -webkit-transform: scale(1.115);
+          transform: scale(1.115);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.projectsContainer .project .project-info .live-site-link:not(:hover) {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.projectsContainer h2 {
+  font-family: "futura-pt-21", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  color: #6e5374;
+  margin-left: 5%;
+}
+
+.projectsContainer h3 {
+  font-family: "futura-pt-21", sans-serif;
+  font-size: 14.8px;
+  font-weight: 100;
+}
+
+.projectsContainer h4 {
+  font-family: "futura-pt-21", sans-serif;
+  font-weight: 100;
+  color: white;
+}
+
+.projectsContainer .photos {
+  max-width: 92%;
+  height: auto;
+  margin-top: 35px;
+  margin-bottom: 10px;
+  border-radius: 1px;
+  border: 1px solid #e1e1e1;
+  border-right: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: #c4d3c0 26px -26px;
+          box-shadow: #c4d3c0 26px -26px;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 885px) {
+  .projectsContainer .photos {
+    max-width: 82%;
+  }
+}
+
+.projectsContainer .photos:hover {
+  -webkit-filter: brightness(29%) !important;
+          filter: brightness(29%) !important;
+  opacity: 100% !important;
+  z-index: 0 !important;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+  -webkit-box-shadow: #5a7653 15px -15px;
+          box-shadow: #5a7653 15px -15px;
+}
+
+.projectsContainer .photos:not(:hover) {
+  opacity: 100% !important;
+  -webkit-filter: brightness(100%) !important;
+          filter: brightness(100%) !important;
+  -webkit-box-shadow: #c4d3c0 26px -26px !important;
+          box-shadow: #c4d3c0 26px -26px !important;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+}
+
+h1 {
+  font-size: 58px;
+  padding-bottom: 40px;
+  margin-left: 20%;
+  margin-top: 4%;
+  font-family: "futura-pt-21", sans-serif;
+}
+
+span {
+  color: #878787;
+}
+
+.youtubeIcon {
+  position: relative;
+  top: 7.7px;
+  font-size: 31.5px !important;
+}
+
+@media (max-width: 885px) {
+  .youtubeIcon {
+    font-size: 35px;
+  }
+}
+
+a {
+  overflow: hidden;
+}
+
+.githubIcon {
+  position: relative;
+  top: 3px;
+}
+/*# sourceMappingURL=projects.css.map */

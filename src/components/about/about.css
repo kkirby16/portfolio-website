@@ -1,0 +1,245 @@
+.about {
+  background-color: #fcf7f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: top;
+      -ms-flex-pack: top;
+          justify-content: top;
+  min-height: 100vh;
+  padding-top: 8%;
+  padding-left: 36%;
+}
+
+@media (max-width: 1238px) {
+  .about {
+    padding-left: 12%;
+  }
+}
+
+@media (max-width: 885px) {
+  .about {
+    padding-top: 2%;
+    padding-left: 7.5%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.about .about-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 760px;
+  font-size: 24px;
+  font-family: "futura-pt-21", sans-serif;
+  font-weight: 100;
+  z-index: 1;
+}
+
+@media (max-width: 885px) {
+  .about .about-description {
+    width: 450px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 414px) {
+  .about .about-description {
+    width: 330px;
+    font-size: 19.5px;
+  }
+}
+
+.about .aboutHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 30px;
+  font-family: "futura-pt-21", sans-serif;
+}
+
+.about .skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "futura-pt-21", sans-serif;
+  font-weight: 100;
+}
+
+@media (max-width: 885px) {
+  .about .skills {
+    position: relative;
+    bottom: 4.5%;
+    left: 2%;
+    width: 600px;
+  }
+}
+
+@media (max-width: 885px) {
+  .about .skills h2 {
+    display: none;
+  }
+}
+
+.about ul {
+  width: 630px;
+}
+
+@media (max-width: 885px) {
+  .about ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    right: 6%;
+    width: 480px !important;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 414px) {
+  .about ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 350px !important;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.about ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: inline;
+}
+
+.about li {
+  margin-right: 2%;
+}
+
+.about .floating1 {
+  -webkit-animation-name: floating;
+          animation-name: floating;
+  -webkit-animation-duration: 5.6s;
+          animation-duration: 5.6s;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  margin-left: 0vw;
+  margin-top: 0.347vw;
+}
+
+@-webkit-keyframes floating {
+  0% {
+    -webkit-transform: translate(0, 0vw);
+            transform: translate(0, 0vw);
+  }
+  50% {
+    -webkit-transform: translate(0, 0.27vw);
+            transform: translate(0, 0.27vw);
+  }
+  100% {
+    -webkit-transform: translate(0, 0vw);
+            transform: translate(0, 0vw);
+  }
+}
+
+@keyframes floating {
+  0% {
+    -webkit-transform: translate(0, 0vw);
+            transform: translate(0, 0vw);
+  }
+  50% {
+    -webkit-transform: translate(0, 0.27vw);
+            transform: translate(0, 0.27vw);
+  }
+  100% {
+    -webkit-transform: translate(0, 0vw);
+            transform: translate(0, 0vw);
+  }
+}
+
+.about .floating2 {
+  -webkit-animation-name: floating;
+          animation-name: floating;
+  -webkit-animation-duration: 5.6s;
+          animation-duration: 5.6s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  margin-left: 0vw;
+  margin-top: 0.347vw;
+}
+
+@keyframes floating {
+  0% {
+    -webkit-transform: translate(0, 0vw);
+            transform: translate(0, 0vw);
+  }
+  50% {
+    -webkit-transform: translate(0, 0.27vw);
+            transform: translate(0, 0.27vw);
+  }
+  100% {
+    -webkit-transform: translate(0, 0vw);
+            transform: translate(0, 0vw);
+  }
+}
+
+.about .floating3 {
+  -webkit-animation-name: floating;
+          animation-name: floating;
+  -webkit-animation-duration: 5.6s;
+          animation-duration: 5.6s;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  margin-left: 0vw;
+  margin-top: 0.347vw;
+}
+
+@keyframes floating {
+  0% {
+    -webkit-transform: translate(0, 0vw);
+            transform: translate(0, 0vw);
+  }
+  50% {
+    -webkit-transform: translate(0, 0.32vw);
+            transform: translate(0, 0.32vw);
+  }
+  100% {
+    -webkit-transform: translate(0, 0vw);
+            transform: translate(0, 0vw);
+  }
+}
+/*# sourceMappingURL=about.css.map */
