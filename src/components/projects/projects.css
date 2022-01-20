@@ -190,10 +190,10 @@
 }
 
 .projectsContainer .photos:hover {
-  -webkit-filter: brightness(29%) !important;
-          filter: brightness(29%) !important;
-  opacity: 1 !important;
-  z-index: 0 !important;
+  -webkit-filter: brightness(29%);
+          filter: brightness(29%);
+  opacity: 1;
+  z-index: 0;
   -webkit-transition: 0.35s;
   transition: 0.35s;
   -webkit-box-shadow: #5a7653 15px -15px;
@@ -201,11 +201,11 @@
 }
 
 .projectsContainer .photos:not(:hover) {
-  opacity: 1 !important;
-  -webkit-filter: brightness(100%) !important;
-          filter: brightness(100%) !important;
-  -webkit-box-shadow: #c4d3c0 26px -26px !important;
-          box-shadow: #c4d3c0 26px -26px !important;
+  opacity: 1;
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
+  -webkit-box-shadow: #c4d3c0 26px -26px;
+          box-shadow: #c4d3c0 26px -26px;
   -webkit-transition: 0.35s;
   transition: 0.35s;
 }
