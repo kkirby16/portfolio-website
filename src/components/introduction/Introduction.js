@@ -3,7 +3,7 @@ import "./introduction.scss";
 export default function Introduction() {
   return (
     <div className="introduction" id="intro">
-      <div className="greeting">Hi, I'm Kevin Kirby. (test)</div>
+      <div className="greeting">Hi, I'm Kevin Kirby.</div>
       <div className="role">
         Full-Stack Web Developer with a&nbsp;
         <i className="frontendWord">frontend</i>&nbsp;focus.
