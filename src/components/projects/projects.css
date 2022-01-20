@@ -192,7 +192,7 @@
 .projectsContainer .photos:hover {
   -webkit-filter: brightness(29%) !important;
           filter: brightness(29%) !important;
-  opacity: 100% !important;
+  opacity: 1 !important;
   z-index: 0 !important;
   -webkit-transition: 0.35s;
   transition: 0.35s;
@@ -201,7 +201,7 @@
 }
 
 .projectsContainer .photos:not(:hover) {
-  opacity: 100% !important;
+  opacity: 1 !important;
   -webkit-filter: brightness(100%) !important;
           filter: brightness(100%) !important;
   -webkit-box-shadow: #c4d3c0 26px -26px !important;
