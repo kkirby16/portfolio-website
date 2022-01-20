@@ -163,6 +163,11 @@ body {
     -moz-animation: fadeIn linear 1.7s;
     -o-animation: fadeIn linear 1.7s;
     -ms-animation: fadeIn linear 1.7s;
+
+    @include iPhoneXrScreen {
+      left: 37.5%;
+      font-size: 15.5px;
+    }
   }
 
   @keyframes fadeIn {

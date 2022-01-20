@@ -242,6 +242,13 @@ body {
   -ms-animation: fadeIn linear 1.7s;
 }
 
+@media (max-width: 414px) {
+  .contact-form span {
+    left: 37.5%;
+    font-size: 15.5px;
+  }
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
