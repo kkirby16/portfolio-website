@@ -1,6 +1,5 @@
 @import "../../global.scss";
 
-
 .navbar {
   background-color: rgb(252, 247, 243);
   position: fixed;
@@ -12,7 +11,7 @@
   font-size: 15px !important;
   color: black;
 
-  @include iPhoneXrScreen { 
+  @include iPhoneXrScreen {
     height: 90px;
     font-size: 19px !important;
     width: 100%;
@@ -26,7 +25,7 @@
   font-family: "futura-pt-19", sans-serif;
   position: relative;
 
-  @include iPhoneXrScreen { 
+  @include iPhoneXrScreen {
     padding: 35px 26px;
   }
 }
@@ -68,7 +67,7 @@
   transform: rotate(-12.5deg);
   transition: 0.2s;
 
-  @include navbarSmallMediumScreen { 
+  @include navbarSmallMediumScreen {
     transform: none;
     transition: none;
   }
@@ -78,7 +77,7 @@
   transform: rotate(0);
   transition: 0.81s;
 
-  @include navbarSmallMediumScreen { 
+  @include navbarSmallMediumScreen {
     transform: none;
     transition: none;
   }
@@ -94,7 +93,7 @@
   text-decoration: none;
   vertical-align: center;
 
-  @include iPhoneXrScreen { 
+  @include iPhoneXrScreen {
     display: none;
   }
 }
@@ -104,19 +103,20 @@
   margin-left: auto;
   border-radius: 1px;
   background-color: black;
-padding: 0px;
-margin-top: 0px;
-margin-left: none;
-color: rgb(252, 247, 243);
-text-decoration: none;
-vertical-align: center;
+  padding: 0px;
+  margin-top: 0px;
+  margin-left: none;
+  color: rgb(252, 247, 243);
+  text-decoration: none;
+  vertical-align: center;
 
-@include iPhoneXrScreen { 
-  display: inline-block !important;
-  padding: 5px 5.5px;
-  margin-top: -1.5%;
-  margin-bottom: 1%;
-}
+  @include iPhoneXrScreen {
+    display: inline-block !important;
+    padding: 5px 5.5px;
+    margin-top: -1.5%;
+    margin-bottom: 1%;
+    margin-left: 3.2%;
+  }
 }
 
 .contactMe:hover {
