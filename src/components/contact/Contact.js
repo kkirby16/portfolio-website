@@ -5,7 +5,7 @@ import { Icon } from "@iconify/react";
 import React, { useState, useRef, useEffect } from "react";
 import { send } from "emailjs-com";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
-import gsap from "gsap";
+// import gsap from "gsap";
 
 export default function Contact() {
   const [toSend, setToSend] = useState({
