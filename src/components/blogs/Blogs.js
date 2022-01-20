@@ -52,12 +52,12 @@ const Blogs = (props) => {
     <div className="blogs" id="blogs">
       <h1 className="blogsTitle">Blogs</h1>
       <img
-        src="assets/icons8-back-arrow-50.png"
+        src="icons8-back-arrow-50.png"
         className="arrowLeft"
         onClick={() => handleClick("left")}
       />
       <img
-        src="assets/icons8-back-arrow-50.png"
+        src="icons8-back-arrow-50.png"
         className="arrowRight"
         onClick={() => handleClick("right")}
       />

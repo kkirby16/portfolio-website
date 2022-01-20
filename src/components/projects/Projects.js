@@ -37,7 +37,7 @@ export default function Projects() {
             </a>
           </div>
           <div className="imageContainer">
-            <img src="assets/photo-sharer.png" alt="" className="photos" />
+            <img src="photo-sharer.png" alt="" className="photos" />
             <h4>
               Final Project at Flatiron School. App with similarities to
               Instagram that allows users to post photos and interact.
@@ -71,7 +71,7 @@ export default function Projects() {
             </a>
           </div>
           <div className="imageContainer">
-            <img src="assets/photo-sharer.png" alt="" className="photos" />
+            <img src="photo-sharer.png" alt="" className="photos" />
             <h4>
               JavaScript app built at Flatiron School. Allows you to see shared
               songs and post your favorite songs.{" "}
@@ -108,7 +108,7 @@ export default function Projects() {
             </a>
           </div>
           <div className="imageContainer">
-            <img src="assets/nail-the-trail.png" alt="" className="photos" />
+            <img src="nail-the-trail.png" alt="" className="photos" />
             <h4>
               Rails MVC CMS app that helps users find the right hike and review
               hikes.
