@@ -141,17 +141,17 @@
   }
 
   .photos:hover {
-    filter: brightness(29%);
-    opacity: 100%;
-    z-index: 0;
+    filter: brightness(29%) !important;
+    opacity: 100% !important;
+    z-index: 0 !important;
     transition: 0.35s;
     box-shadow: #5a7653 15px -15px;
   }
 
   .photos:not(:hover) {
-    opacity: 100%;
-    filter: brightness(100%);
-    box-shadow: #c4d3c0 26px -26px;
+    opacity: 100% !important;
+    filter: brightness(100%) !important;
+    box-shadow: #c4d3c0 26px -26px !important;
     transition: 0.35s;
   }
 }
