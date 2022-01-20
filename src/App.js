@@ -25,7 +25,7 @@ function App() {
       <div className="segments">
         <Introduction />
         <About />
-        <Projects />
+        <Projects className="projectsComponent"/>
         <Blogs blogs={blogs} />
         <Contact />
       </div>
