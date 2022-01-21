@@ -14,6 +14,8 @@ $navbarSmallMediumWidth: 703px;
 $contactSmallWidth: 783px;
 $iPhoneXrWidth: 414px;
 $smallMediumIntroWidth: 962px;
+$iPhoneTwelveProWidth: 390px;
+$heightForMovingBlogsTitle: 714px;
 
 @mixin mediumScreen {
   @media (max-width: #{$mediumWidth}) {
@@ -89,6 +91,18 @@ $smallMediumIntroWidth: 962px;
 
 @mixin smallMediumIntroScreen {
   @media (max-width: #{$smallMediumIntroWidth}) {
+    @content;
+  }
+}
+
+@mixin iPhoneTwelveProScreen {
+  @media (max-width: #{$iPhoneTwelveProWidth}) {
+    @content;
+  }
+}
+
+@mixin movingBlogsTitleForSpecificHeight {
+  @media (max-height: #{$heightForMovingBlogsTitle}) {
     @content;
   }
 }
