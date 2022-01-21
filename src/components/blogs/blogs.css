@@ -111,8 +111,8 @@
   display: -ms-flexbox;
   display: flex;
   left: 0;
-  -webkit-transition: all 0.9s ease-out;
-  transition: all 0.9s ease-out;
+  -webkit-transition: all 0.84s ease-out;
+  transition: all 0.84s ease-out;
 }
 
 @media (max-width: 414px) {
@@ -176,14 +176,14 @@
 
 @media (max-width: 414px) {
   .blogs .slider .container .blog {
-    width: 320px;
+    width: 332px;
     font-size: 15.1px;
   }
 }
 
 .blogs .slider .container .blog .blogImage {
   margin-top: 1%;
-  width: 370px;
+  width: 375px;
   height: auto;
   border-radius: 2%;
 }

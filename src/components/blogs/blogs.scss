@@ -1,6 +1,5 @@
 @import "../../global.scss";
 
-
 .blogs {
   background-color: #76597d;
   display: flex;
@@ -15,7 +14,7 @@
     bottom: 34.5%;
     right: 4%;
 
-    @include blogsPageForIphoneScreens { 
+    @include blogsPageForIphoneScreens {
       bottom: 28%;
       left: 7%;
     }
@@ -28,16 +27,15 @@
     left: 11%;
     cursor: pointer;
 
-    @include blogsPageSmallScreen { 
+    @include blogsPageSmallScreen {
       left: 11%;
       top: 9.5%;
       height: 58px;
     }
 
-    @include blogsPageForIphoneScreens { 
+    @include blogsPageForIphoneScreens {
       top: 17%;
       left: 8%;
-    
     }
   }
 
@@ -59,16 +57,15 @@
     transform: rotate(180deg);
     cursor: pointer;
 
-    @include blogsPageSmallScreen { 
+    @include blogsPageSmallScreen {
       left: 24%;
       top: 9.5%;
       height: 58px;
     }
 
-    @include blogsPageForIphoneScreens { 
+    @include blogsPageForIphoneScreens {
       top: 17%;
       left: 25%;
-    
     }
   }
 
@@ -87,19 +84,17 @@
     height: 370px;
     display: flex;
     left: 0;
-    transition: all 0.9s ease-out;
+    transition: all 0.84s ease-out;
 
-    @include iPhoneXrScreen { 
+    @include iPhoneXrScreen {
       height: 400px;
     }
-
 
     .container {
       width: 100vw;
       display: flex;
       align-items: center;
       justify-content: center;
-      
 
       .blog {
         display: flex;
@@ -108,7 +103,6 @@
         justify-content: space-around;
         font-family: "futura-pt-21", sans-serif;
 
-
         width: 720px;
         height: 100%;
         background-color: rgb(252, 247, 243);
@@ -116,32 +110,32 @@
         padding-right: 12px;
         padding-left: 12px;
 
-        @include blogsPageSmallMediumScreen { 
+        @include blogsPageSmallMediumScreen {
           width: 600px;
           font-size: 13.8px;
           padding-right: 10px;
           padding-left: 10px;
         }
 
-        @include blogsPageSmallerScreen { 
+        @include blogsPageSmallerScreen {
           width: 442px;
           font-size: 12.5px;
           padding-right: 18px;
           padding-left: 18px;
         }
 
-        @include iPhoneXrScreen { 
-          width: 320px;
+        @include iPhoneXrScreen {
+          width: 332px;
           font-size: 15.1px;
         }
 
         .blogImage {
           margin-top: 1%;
-          width: 370px;
+          width: 375px;
           height: auto;
           border-radius: 2%;
 
-          @include iPhoneXrScreen { 
+          @include iPhoneXrScreen {
             width: 305px;
             height: auto;
           }
