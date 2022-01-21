@@ -1,6 +1,5 @@
 @import "../../global.scss";
 
-
 .introduction {
   background-color: rgb(252, 247, 243);
   text-align: center;
@@ -11,14 +10,14 @@
   flex-direction: column;
   justify-content: center;
 
-  @include iPhoneXrScreen { 
+  @include iPhoneXrScreen {
     justify-content: flex-start;
     padding-top: 15.5%;
   }
 }
 
 .greeting {
-  font-size: clamp(2.5rem, 6.8vw, 7.0vw);
+  font-size: clamp(2.75rem, 6.8vw, 7vw);
   font-family: "futura-pt-21", sans-serif;
   display: flex;
   align-items: center;
@@ -26,17 +25,17 @@
   padding-top: 12.5vw;
   z-index: 3;
 
-  @include smallMediumScreen { 
+  @include smallMediumScreen {
     padding-top: 30vw;
   }
 
-  @include iPhoneXrScreen { 
+  @include iPhoneXrScreen {
     align-items: left !important;
   }
 }
 
 .role {
-  font-size: clamp(1.08rem, 1.9vw, 2.1vw);
+  font-size: clamp(1.088rem, 1.9vw, 2.1vw);
   font-family: "futura-pt-21", sans-serif;
 
   display: flex;
@@ -45,8 +44,7 @@
   font-weight: 100;
   z-index: 3;
 
-
-  @include iPhoneXrScreen { 
+  @include iPhoneXrScreen {
     align-items: left;
   }
 }
@@ -79,7 +77,7 @@
   background: transparent;
   border: 1px solid black;
 
-  @include iPhoneXrScreen { 
+  @include iPhoneXrScreen {
     right: 3%;
     bottom: 62%;
   }
@@ -96,10 +94,9 @@
   background: transparent;
   border: 1px solid black;
 
-  @include iPhoneXrScreen { 
+  @include iPhoneXrScreen {
     right: 25%;
     bottom: 62%;
-
   }
 }
 
@@ -114,10 +111,9 @@
   background: transparent;
   border: 1px solid black;
 
-  @include iPhoneXrScreen { 
-  right: 14%;
-  bottom: 62%;
-
+  @include iPhoneXrScreen {
+    right: 14%;
+    bottom: 62%;
   }
 }
 
@@ -132,7 +128,7 @@
   background: transparent;
   border: 1px solid black;
 
-  @include iPhoneXrScreen { 
+  @include iPhoneXrScreen {
     right: 25%;
     bottom: 56%;
   }
@@ -149,7 +145,7 @@
   background: transparent;
   border: 1px solid black;
 
-  @include iPhoneXrScreen { 
+  @include iPhoneXrScreen {
     right: 14%;
     bottom: 56%;
   }
@@ -166,7 +162,7 @@
   background: transparent;
   border: 1px solid black;
 
-  @include iPhoneXrScreen { 
+  @include iPhoneXrScreen {
     right: 3%;
     bottom: 56%;
   }
@@ -183,7 +179,7 @@
   background: transparent;
   border: 1px solid black;
 
-  @include iPhoneXrScreen { 
+  @include iPhoneXrScreen {
     right: 25%;
   }
 }
@@ -199,7 +195,7 @@
   background: transparent;
   border: 1px solid black;
 
-  @include iPhoneXrScreen { 
+  @include iPhoneXrScreen {
     right: 13.7%;
   }
 }
@@ -215,7 +211,7 @@
   background: transparent;
   border: 1px solid black;
 
-  @include iPhoneXrScreen { 
+  @include iPhoneXrScreen {
     right: 3%;
   }
 }
@@ -231,7 +227,7 @@
   background: transparent;
   border: 1px solid black;
 
-  @include iPhoneXrScreen { 
+  @include iPhoneXrScreen {
     right: 36%;
   }
 }
@@ -247,7 +243,7 @@
   background: transparent;
   border: 1px solid black;
 
-  @include iPhoneXrScreen { 
+  @include iPhoneXrScreen {
     right: 36%;
     bottom: 56%;
   }
@@ -264,18 +260,16 @@
   background: transparent;
   border: 1px solid black;
 
-  @include iPhoneXrScreen { 
-  right: 36%;
-  bottom: 62%;
+  @include iPhoneXrScreen {
+    right: 36%;
+    bottom: 62%;
   }
 }
 
-
-
-
-.design {
-  left: 50%;
-  top: 13%;
+.circleGridDiv {
+  @include smallMediumIntroScreen {
+    display: none;
+  }
 }
 
 .triangle-topleft {
@@ -295,12 +289,19 @@
 }
 
 .design {
-  height: 17.361vw;
-  width: 15.972vw;
+  height: 12vw;
+  width: 11vw;
   position: absolute;
-  right: 12%;
-  bottom: 38%;
+  right: 30%;
+  bottom: 58%;
   z-index: 3;
+
+  @include iPhoneXrScreen {
+    height: 35vw;
+    width: 32vw;
+    bottom: 40%;
+    right: 8.5%;
+  }
 }
 
 i {
@@ -308,11 +309,28 @@ i {
   padding-right: 2.5px;
 }
 
-.diagonalArrow {
-  height: 70px;
-  width: 70px;
+// @include iPhoneXrScreen {
+//   top: 46%;
+//   left: 11%;
+// }
+
+.diagonalArrowDesign {
   position: relative;
-  top: 110px;
-  left: 360px;
-  transform: rotate(10deg);
+  bottom: -11%;
+  left: 22%;
+  width: 173px;
+  height: 173px;
+
+  @include smallMediumScreen {
+    width: 125px;
+    height: 125px;
+    bottom: -12%;
+  }
+
+  @include iPhoneXrScreen {
+    width: 150px;
+    height: 150px;
+    top: 42%;
+    left: 8%;
+  }
 }
