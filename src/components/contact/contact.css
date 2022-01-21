@@ -235,11 +235,11 @@ body {
   position: relative;
   bottom: 13.5%;
   left: 25%;
-  animation: fadeIn linear 1.7s;
-  -webkit-animation: fadeIn linear 1.7s;
-  -moz-animation: fadeIn linear 1.7s;
-  -o-animation: fadeIn linear 1.7s;
-  -ms-animation: fadeIn linear 1.7s;
+  animation: fadeIn linear 1.55s;
+  -webkit-animation: fadeIn linear 1.55s;
+  -moz-animation: fadeIn linear 1.55s;
+  -o-animation: fadeIn linear 1.55s;
+  -ms-animation: fadeIn linear 1.55s;
 }
 
 @media (max-width: 414px) {
