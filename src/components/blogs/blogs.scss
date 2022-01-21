@@ -18,12 +18,24 @@
       bottom: 28%;
       left: 7%;
     }
+
+    @include iPhoneTwelveProScreen {
+      bottom: 29.5%;
+    }
+
+    @include movingBlogsTitleForSpecificHeight {
+      bottom: 35.7%;
+    }
+
+    @include blogsPageSmallerScreen {
+      bottom: 34.8%;
+    }
   }
 
   .arrowLeft {
     height: 70px;
     position: absolute;
-    z-index: 3;
+    z-index: 1;
     left: 11%;
     cursor: pointer;
 
@@ -36,6 +48,10 @@
     @include blogsPageForIphoneScreens {
       top: 17%;
       left: 8%;
+    }
+
+    @include iPhoneTwelveProScreen {
+      top: 15.5%;
     }
   }
 
@@ -52,7 +68,7 @@
   .arrowRight {
     height: 70px;
     position: absolute;
-    z-index: 3;
+    z-index: 1;
     right: 11%;
     transform: rotate(180deg);
     cursor: pointer;
@@ -66,6 +82,10 @@
     @include blogsPageForIphoneScreens {
       top: 17%;
       left: 25%;
+    }
+
+    @include iPhoneTwelveProScreen {
+      top: 15.5%;
     }
   }
 
