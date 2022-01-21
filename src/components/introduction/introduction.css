@@ -75,6 +75,12 @@
   }
 }
 
+@media (max-width: 390px) {
+  .role {
+    font-size: 1.023rem;
+  }
+}
+
 .circle1 {
   border-radius: 100%;
   width: 525px;

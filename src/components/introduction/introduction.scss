@@ -47,6 +47,10 @@
   @include iPhoneXrScreen {
     align-items: left;
   }
+
+  @include iPhoneTwelveProScreen {
+    font-size: 1.023rem;
+  }
 }
 
 // //.shapeContainer {
