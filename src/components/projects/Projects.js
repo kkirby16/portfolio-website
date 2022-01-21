@@ -71,7 +71,7 @@ export default function Projects() {
             </a>
           </div>
           <div className="imageContainer">
-            <img src="photo-sharer.png" alt="" className="photos" />
+            <img src="song-sharer.png" alt="" className="photos" />
             <h4>
               JavaScript app built at Flatiron School. Allows you to see shared
               songs and post your favorite songs.{" "}
