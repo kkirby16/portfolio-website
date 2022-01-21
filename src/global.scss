@@ -7,116 +7,106 @@ $forProjectsPageSmallMaxWidth: 702px;
 $blogsPageSmallMediumWidth: 1146px;
 $blogsPageSmallWidth: 1012px;
 
-$blogsPageSmallerWidth: 681px; 
+$blogsPageSmallerWidth: 681px;
 
 $blogsPageForIphoneWidth: 414px;
 $navbarSmallMediumWidth: 703px;
 $contactSmallWidth: 783px;
 $iPhoneXrWidth: 414px;
+$smallMediumIntroWidth: 962px;
 
-
-
-
-@mixin mediumScreen { 
-    @media (max-width: #{$mediumWidth}) { 
-       @content;
-    }
+@mixin mediumScreen {
+  @media (max-width: #{$mediumWidth}) {
+    @content;
+  }
 }
 
 @mixin smallMediumScreen {
-    @media (max-width: #{$smallMediumWidth}) {
-      @content;
-    }
+  @media (max-width: #{$smallMediumWidth}) {
+    @content;
+  }
 }
 
-@mixin forProjectsPageSmallMediumScreen { 
-    @media (min-width: #{$forProjectsPageSmallMediumMinWidth}) and (max-width: #{$forProjectsPageSmallMediumMaxWidth}) { 
-        @content;
-    }
+@mixin forProjectsPageSmallMediumScreen {
+  @media (min-width: #{$forProjectsPageSmallMediumMinWidth}) and (max-width: #{$forProjectsPageSmallMediumMaxWidth}) {
+    @content;
+  }
 }
 
-@mixin forProjectsPageSmallScreen { 
-    @media (min-width: #{$forProjectsPageSmallMinWidth}) and (max-width: #{$forProjectsPageSmallMaxWidth}) { 
-        @content;
-    }
+@mixin forProjectsPageSmallScreen {
+  @media (min-width: #{$forProjectsPageSmallMinWidth}) and (max-width: #{$forProjectsPageSmallMaxWidth}) {
+    @content;
+  }
 }
 
 @mixin blogsPageSmallMediumScreen {
-    @media (max-width: #{$blogsPageSmallMediumWidth}) {
-      @content;
-    }
+  @media (max-width: #{$blogsPageSmallMediumWidth}) {
+    @content;
+  }
 }
 
-  @mixin blogsPageSmallScreen {
-    @media (max-width: #{$blogsPageSmallWidth}) {
-      @content;
-    }
+@mixin blogsPageSmallScreen {
+  @media (max-width: #{$blogsPageSmallWidth}) {
+    @content;
+  }
 }
 
 @mixin blogsPageSmallerScreen {
-    @media (max-width: #{$blogsPageSmallerWidth}) {
-        @content;
-    }
+  @media (max-width: #{$blogsPageSmallerWidth}) {
+    @content;
+  }
 }
 
 @mixin blogsPageForIphoneScreens {
-    @media (max-width: #{$blogsPageForIphoneWidth}) {
-      @content;
-    }
+  @media (max-width: #{$blogsPageForIphoneWidth}) {
+    @content;
+  }
 }
 
 @mixin navbarSmallMediumScreen {
-    @media (max-width: #{$navbarSmallMediumWidth}) {
-      @content;
-    }
+  @media (max-width: #{$navbarSmallMediumWidth}) {
+    @content;
+  }
 }
 
 @mixin forProjectsPageSmallMediumMaxScreen {
-    @media (max-width: #{$forProjectsPageSmallMediumMaxWidth}) {
-      @content;
-    }
+  @media (max-width: #{$forProjectsPageSmallMediumMaxWidth}) {
+    @content;
+  }
 }
 
 @mixin contactSmallScreen {
-    @media (max-width: #{$contactSmallWidth}) {
-      @content;
-    }
+  @media (max-width: #{$contactSmallWidth}) {
+    @content;
+  }
 }
 
 @mixin iPhoneXrScreen {
-    @media (max-width: #{$iPhoneXrWidth}) {
-      @content;
-    }
+  @media (max-width: #{$iPhoneXrWidth}) {
+    @content;
+  }
 }
 
+@mixin smallMediumIntroScreen {
+  @media (max-width: #{$smallMediumIntroWidth}) {
+    @content;
+  }
+}
 
-
-
-
-
-
-  
-
-
-  
 //   @mixin mediumDevice {
 //     @media (min-width: #{$breakpoint-md}) and (max-width: #{$breakpoint-lr - 1px}) {
 //       @content;
 //     }
 //   }
-  
+
 //   @mixin smallDevice {
 //     @media (min-width: #{$breakpoint-sm}) and (max-width: #{$breakpoint-md - 1px}) {
 //       @content;
 //     }
 //   }
-  
+
 //   @mixin extraSmallDevice {
 //     @media (min-width: #{$breakpoint-xs}) and (max-width: #{$breakpoint-sm - 1px}) {
 //       @content;
 //     }
 //   }
-  
-
-
-
