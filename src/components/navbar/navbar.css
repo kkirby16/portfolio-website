@@ -104,8 +104,8 @@
 .logo-link:not(:hover) {
   -webkit-transform: rotate(0);
           transform: rotate(0);
-  -webkit-transition: 0.81s;
-  transition: 0.81s;
+  -webkit-transition: 0.98s;
+  transition: 0.98s;
 }
 
 @media (max-width: 703px) {
