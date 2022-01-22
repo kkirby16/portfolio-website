@@ -144,6 +144,23 @@
     @include smallMediumScreen {
       max-width: 82%;
     }
+
+    @include iPhoneXrScreen {
+      .photos:focus {
+        filter: brightness(29%);
+        opacity: 1;
+        z-index: 0;
+        transition: 0.35s;
+        box-shadow: #5a7653 15px -15px;
+      }
+
+      .photos:not(:focus) {
+        opacity: 1;
+        filter: brightness(100%);
+        box-shadow: #c4d3c0 26px -26px;
+        transition: 0.35s;
+      }
+    }
   }
 
   .photos:hover {

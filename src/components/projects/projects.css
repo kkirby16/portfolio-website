@@ -197,6 +197,28 @@
   }
 }
 
+@media (max-width: 414px) {
+  .projectsContainer .photos .photos:focus {
+    -webkit-filter: brightness(29%);
+            filter: brightness(29%);
+    opacity: 1;
+    z-index: 0;
+    -webkit-transition: 0.35s;
+    transition: 0.35s;
+    -webkit-box-shadow: #5a7653 15px -15px;
+            box-shadow: #5a7653 15px -15px;
+  }
+  .projectsContainer .photos .photos:not(:focus) {
+    opacity: 1;
+    -webkit-filter: brightness(100%);
+            filter: brightness(100%);
+    -webkit-box-shadow: #c4d3c0 26px -26px;
+            box-shadow: #c4d3c0 26px -26px;
+    -webkit-transition: 0.35s;
+    transition: 0.35s;
+  }
+}
+
 .projectsContainer .photos:hover {
   -webkit-filter: brightness(29%);
           filter: brightness(29%);
