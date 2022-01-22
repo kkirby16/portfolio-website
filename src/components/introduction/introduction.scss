@@ -1,15 +1,5 @@
 @import "../../global.scss";
 
-@font-face {
-  font-family: "futura-pt-21";
-  src: url("https://blogfonts.com/fonts/f/249/153249/file/FuturaPTMedium.otf")
-      format("woff"),
-    url("https://blogfonts.com/fonts/f/249/153249/file/FuturaPTMedium.otf")
-      format("opentype"),
-    url("https://blogfonts.com/fonts/f/249/153249/file/FuturaPTMedium.otf")
-      format("truetype");
-}
-
 .introduction {
   background-color: rgb(252, 247, 243);
   text-align: center;
@@ -313,7 +303,7 @@
   position: absolute;
   right: 30%;
   bottom: 58%;
-  z-index: 3;
+  z-index: 1;
 
   @include iPhoneXrScreen {
     height: 35vw;
