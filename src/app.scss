@@ -16,6 +16,10 @@
     }
     scroll-snap-type: y mandatory;
 
+    @include iPhoneXrScreen {
+      scroll-snap-type: none;
+    }
+
     > *:not(:last-child) {
       //for each of the components
       width: 100vw;
@@ -29,28 +33,27 @@
       scroll-snap-align: start;
     }
 
-    > :nth-child(3) { 
-      @include smallMediumScreen  { 
+    > :nth-child(3) {
+      scroll-snap-type: none !important;
+
+      @include smallMediumScreen {
         height: 270% !important;
         scroll-snap-align: start;
       }
 
-      @include forProjectsPageSmallScreen { 
+      @include forProjectsPageSmallScreen {
         height: 238% !important;
       }
 
-      @include iPhoneXrScreen { 
-        height: 160% !important;
+      @include iPhoneXrScreen {
+        height: 167% !important;
       }
-      // @include smallMediumScreen { 
-      // > :nth-child(4) { 
+      // @include smallMediumScreen {
+      // > :nth-child(4) {
       //     height: 230% !important;
       //     scroll-snap-align: none !important;
       //     scroll-snap-type: none !important;
       //   }
-       
-      
     }
   }
-
 }

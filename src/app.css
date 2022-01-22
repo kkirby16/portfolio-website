@@ -18,6 +18,13 @@
   display: none;
 }
 
+@media (max-width: 414px) {
+  .app .segments {
+    -ms-scroll-snap-type: none;
+        scroll-snap-type: none;
+  }
+}
+
 .app .segments > *:not(:last-child) {
   width: 100vw;
   height: calc(100vh - 65px);
@@ -28,6 +35,11 @@
   width: 100vw;
   height: calc(100vh - 200px);
   scroll-snap-align: start;
+}
+
+.app .segments > :nth-child(3) {
+  -ms-scroll-snap-type: none !important;
+      scroll-snap-type: none !important;
 }
 
 @media (max-width: 885px) {
@@ -45,7 +57,7 @@
 
 @media (max-width: 414px) {
   .app .segments > :nth-child(3) {
-    height: 160% !important;
+    height: 167% !important;
   }
 }
 /*# sourceMappingURL=app.css.map */
