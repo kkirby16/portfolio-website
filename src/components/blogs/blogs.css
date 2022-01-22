@@ -23,7 +23,7 @@
 
 @media (max-width: 414px) {
   .blogs .blogsTitle {
-    bottom: 28%;
+    bottom: 33% !important;
     left: 7%;
   }
 }
@@ -64,7 +64,7 @@
 
 @media (max-width: 414px) {
   .blogs .arrowLeft {
-    top: 17%;
+    top: 12.3%;
     left: 8%;
   }
 }
@@ -109,7 +109,7 @@
 
 @media (max-width: 414px) {
   .blogs .arrowRight {
-    top: 17%;
+    top: 12.3%;
     left: 25%;
   }
 }
@@ -141,6 +141,7 @@
   display: -ms-flexbox;
   display: flex;
   left: 0;
+  margin-top: 8%;
   -webkit-transition: all 0.84s ease-out;
   transition: all 0.84s ease-out;
 }
