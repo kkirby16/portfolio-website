@@ -41,7 +41,7 @@
 
 @media (max-width: 414px) {
   .contactLinks {
-    margin-bottom: 17.5%;
+    margin-bottom: 12%;
   }
 }
 
@@ -103,6 +103,13 @@ body {
   overflow: hidden;
 }
 
+@media (max-width: 414px) {
+  .get-in-touch {
+    min-height: 50%;
+    top: 37%;
+  }
+}
+
 .get-in-touch .title {
   text-align: left;
   font-family: Raleway, sans-serif;
@@ -116,6 +123,12 @@ body {
 
 .contact-form {
   height: 500px;
+}
+
+@media (max-width: 414px) {
+  .contact-form {
+    height: 400px;
+  }
 }
 
 .contact-form .form-field {

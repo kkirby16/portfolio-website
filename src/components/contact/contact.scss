@@ -23,7 +23,7 @@
   align-items: flex-end;
 
   @include iPhoneXrScreen {
-    margin-bottom: 17.5%;
+    margin-bottom: 12%;
   }
 }
 
@@ -86,6 +86,11 @@ body {
   transform: translateY(-50%);
   overflow: hidden;
 
+  @include iPhoneXrScreen {
+    min-height: 50%;
+    top: 37%;
+  }
+
   .title {
     text-align: left;
     font-family: Raleway, sans-serif;
@@ -100,6 +105,11 @@ body {
 
 .contact-form {
   height: 500px;
+
+  @include iPhoneXrScreen {
+    height: 400px;
+  }
+
   .form-field {
     display: flex;
     flex-direction: row;
