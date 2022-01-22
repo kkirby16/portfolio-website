@@ -33,7 +33,7 @@
     }
     h4 {
       position: absolute;
-      font-size: clamp(1.5vw, 1.736vw, 19vw);
+      font-size: clamp(1.7vw, 1.736vw, 19vw);
       top: 41%;
       left: 5%;
       margin-left: 5%;
@@ -46,6 +46,11 @@
         font-size: 3.2vw;
         top: 45%;
         word-wrap: break-word;
+      }
+
+      @include iPhoneXrScreen {
+        font-size: 4.1vw;
+        top: 42.5%;
       }
     }
 
