@@ -23,7 +23,7 @@
   align-items: center;
   padding-left: 4.514vw;
   padding-top: 12.5vw;
-  z-index: 3;
+  z-index: 1;
 
   @include smallMediumScreen {
     padding-top: 30vw;
@@ -42,7 +42,7 @@
   align-items: center;
   padding-left: 4.75vw;
   font-weight: 100;
-  z-index: 3;
+  z-index: 1;
 
   @include iPhoneXrScreen {
     align-items: left;
@@ -286,6 +286,10 @@
   border-top: 100px solid #6e5374;
   border-right: 100px solid rgb(252, 247, 243);
   background-color: rgb(252, 247, 243);
+
+  @include iPhoneXrScreen {
+    top: 6%;
+  }
 }
 
 .lightenedText {
@@ -334,7 +338,7 @@ i {
   @include iPhoneXrScreen {
     width: 150px;
     height: 150px;
-    top: 42%;
+    top: 33.5%;
     left: 8%;
   }
 }

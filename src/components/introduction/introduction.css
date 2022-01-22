@@ -36,7 +36,7 @@
           align-items: center;
   padding-left: 4.514vw;
   padding-top: 12.5vw;
-  z-index: 3;
+  z-index: 1;
 }
 
 @media (max-width: 885px) {
@@ -64,7 +64,7 @@
           align-items: center;
   padding-left: 4.75vw;
   font-weight: 100;
-  z-index: 3;
+  z-index: 1;
 }
 
 @media (max-width: 414px) {
@@ -334,6 +334,12 @@
   background-color: #fcf7f3;
 }
 
+@media (max-width: 414px) {
+  .triangle-topleft {
+    top: 6%;
+  }
+}
+
 .lightenedText {
   color: #f3f4ed;
 }
@@ -381,7 +387,7 @@ i {
   .diagonalArrowDesign {
     width: 150px;
     height: 150px;
-    top: 42%;
+    top: 33.5%;
     left: 8%;
   }
 }
