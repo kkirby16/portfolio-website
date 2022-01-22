@@ -104,11 +104,11 @@
     height: 370px;
     display: flex;
     left: 0;
-    margin-top: 8%;
     transition: all 0.84s ease-out;
 
     @include iPhoneXrScreen {
       height: 400px;
+      margin-top: 8%;
     }
 
     .container {
