@@ -39,6 +39,12 @@
           align-items: flex-end;
 }
 
+@media (max-width: 414px) {
+  .contactLinks {
+    margin-bottom: 20%;
+  }
+}
+
 .contactIcon {
   padding-bottom: 12px;
 }
