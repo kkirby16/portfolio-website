@@ -41,7 +41,8 @@
 
 @media (max-width: 414px) {
   .contactLinks {
-    margin-bottom: 12%;
+    margin-top: 40%;
+    height: 80px;
   }
 }
 
@@ -127,7 +128,7 @@ body {
 
 @media (max-width: 414px) {
   .contact-form {
-    height: 400px;
+    height: 320px;
   }
 }
 

@@ -23,7 +23,8 @@
   align-items: flex-end;
 
   @include iPhoneXrScreen {
-    margin-bottom: 12%;
+    margin-top: 40%;
+    height: 80px;
   }
 }
 
@@ -107,7 +108,7 @@ body {
   height: 500px;
 
   @include iPhoneXrScreen {
-    height: 400px;
+    height: 320px;
   }
 
   .form-field {
