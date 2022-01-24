@@ -55,5 +55,11 @@
       //     scroll-snap-type: none !important;
       //   }
     }
+
+    > :nth-child(5) {
+      @include iPhoneXrScreen {
+        height: 90%;
+      }
+    }
   }
 }
