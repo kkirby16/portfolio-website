@@ -39,7 +39,7 @@ export default function Projects() {
           <div className="imageContainer">
             <img src="photo-sharer.png" alt="" className="photos" />
             <h4>
-              Final Project at Flatiron School. App with similarities to
+              Final Project at Flatiron School. React app with similarities to
               Instagram that allows users to post photos and interact.
             </h4>
           </div>
@@ -74,7 +74,7 @@ export default function Projects() {
             <img src="song-sharer.png" alt="" className="photos" />
             <h4>
               JavaScript app built at Flatiron School. Allows you to see shared
-              songs and post your favorite songs.{" "}
+              songs, like/unlike them, and post your favorite songs.{" "}
             </h4>
           </div>
           <h3>
@@ -116,7 +116,7 @@ export default function Projects() {
           </div>
           <h3>
             Rails <span>/</span> SQLite <span>/</span> Custom CSS <span>/</span>{" "}
-            Omniauth Login and normal login
+            Omniauth login and normal login
           </h3>
         </div>
       </div>
