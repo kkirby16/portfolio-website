@@ -28,10 +28,12 @@
 
   @include smallMediumScreen {
     padding-top: 30vw;
+    opacity: 0;
   }
 
   @include iPhoneXrScreen {
     align-items: left !important;
+    opacity: 0;
   }
 }
 

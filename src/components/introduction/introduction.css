@@ -43,6 +43,7 @@
 @media (max-width: 885px) {
   .greeting {
     padding-top: 30vw;
+    opacity: 0;
   }
 }
 
@@ -51,6 +52,7 @@
     -webkit-box-align: left !important;
         -ms-flex-align: left !important;
             align-items: left !important;
+    opacity: 0;
   }
 }
 
