@@ -19,7 +19,7 @@
 .greeting {
   font-size: clamp(2.75rem, 6.8vw, 7vw);
   font-family: "futura-pt-21", sans-serif;
-
+  opacity: 0;
   display: flex;
   align-items: center;
   padding-left: 4.514vw;
@@ -44,6 +44,7 @@
   padding-left: 4.75vw;
   font-weight: 100;
   z-index: 1;
+  opacity: 0;
 
   @include iPhoneXrScreen {
     align-items: left;
