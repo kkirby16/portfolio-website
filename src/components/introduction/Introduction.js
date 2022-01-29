@@ -1,12 +1,47 @@
+import React, { useRef, useEffect } from "react";
 import "./introduction.scss";
+import { gsap } from "gsap";
 
 export default function Introduction() {
+  let greeting = useRef(null);
+  let role = useRef(null);
+
+  useEffect(() => {
+    gsap.to(greeting, {
+      duration: 1.2,
+      opacity: 1,
+      y: -20,
+      ease: "power3",
+    });
+    gsap.to(role, {
+      duration: 1.1,
+      opacity: 1,
+
+      y: -20,
+      ease: "power3",
+      delay: 0.28,
+    });
+  });
+
   return (
     <div className="introduction" id="intro">
-      <div className="greeting">Hi, I'm Kevin Kirby.</div>
-      <div className="role">
+      <div
+        className="greeting"
+        ref={(el) => {
+          greeting = el;
+        }}
+      >
+        Hi, I'm Kevin Kirby.
+      </div>
+      <div
+        className="role"
+        ref={(el) => {
+          role = el;
+        }}
+      >
         Full-Stack Web Developer with a&nbsp;
-        <i className="frontendWord">frontend</i>&nbsp;focus.
+        <i className="frontendWord">frontend</i>
+        &nbsp;focus.
       </div>
       <div className="shapeContainer">
         <div className="circle1"></div>
