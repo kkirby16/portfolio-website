@@ -29,7 +29,6 @@ const Blogs = (props) => {
         <div key={blog.id} className="blog">
           <a href={blog.url} className="title">
             {blog.title}
-            {console.log(blog.title)}
           </a>
           <img
             src={blog.social_image}

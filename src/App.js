@@ -17,15 +17,13 @@ function App() {
       });
   }, []);
 
-  console.log(blogs);
-
   return (
     <div className="app">
       <Navbar />
       <div className="segments">
         <Introduction />
         <About />
-        <Projects className="projectsComponent"/>
+        <Projects className="projectsComponent" />
         <Blogs blogs={blogs} />
         <Contact />
       </div>
