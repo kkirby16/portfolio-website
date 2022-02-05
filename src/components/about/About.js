@@ -1,10 +1,43 @@
 import "./about.scss";
 import { Icon } from "@iconify/react";
+import React, { useRef, useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function About() {
+  useEffect(() => {
+    gsap.to(aboutHeader, {
+      duration: 1.2,
+      opacity: 1,
+      y: -20,
+      ease: "power3",
+      scrollTrigger: {
+        trigger: ".about",
+      },
+    });
+    // gsap.to(role, {
+    //   duration: 1.1,
+    //   opacity: 1,
+
+    //   y: -20,
+    //   ease: "power3",
+    //   delay: 0.28,
+    // });
+  }, []);
+
+  let aboutHeader = useRef(null);
+  let aboutDescription = useRef(null);
+
   return (
     <div className="about" id="about">
-      <h2 className="aboutHeader">About</h2>
+      <h2
+        className="aboutHeader"
+        ref={(el) => {
+          aboutHeader = el;
+        }}
+      >
+        About
+      </h2>
       <p className="about-description">
         Full-stack software developer with a background in SaaS sales
         development. An adept analyst and communicator who continually aims to

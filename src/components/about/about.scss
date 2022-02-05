@@ -10,11 +10,11 @@
   padding-top: 8%;
   padding-left: 36%;
 
-  @include mediumScreen { 
+  @include mediumScreen {
     padding-left: 12%;
   }
 
-  @include smallMediumScreen { 
+  @include smallMediumScreen {
     padding-top: 2%;
     padding-left: 7.5%;
     justify-content: center;
@@ -28,13 +28,13 @@
     font-family: "futura-pt-21", sans-serif;
     font-weight: 100;
     z-index: 1;
-    @include smallMediumScreen { 
+    @include smallMediumScreen {
       width: 450px;
       font-size: 20px;
     }
 
-    @include iPhoneXrScreen { 
-      width: 330px; 
+    @include iPhoneXrScreen {
+      width: 330px;
       font-size: 19.5px;
     }
   }
@@ -44,6 +44,7 @@
     font-size: 30px;
 
     font-family: "futura-pt-21", sans-serif;
+    opacity: 0;
   }
 
   .skills {
@@ -52,38 +53,37 @@
     font-family: "futura-pt-21", sans-serif;
     font-weight: 100;
 
-    @include smallMediumScreen { 
-     position: relative; 
-     bottom: 4.5%;
-     left: 2%;
-     width: 600px;
+    @include smallMediumScreen {
+      position: relative;
+      bottom: 4.5%;
+      left: 2%;
+      width: 600px;
     }
 
-    h2 { 
-      @include smallMediumScreen { 
-      display: none;
-       }
-   
+    h2 {
+      @include smallMediumScreen {
+        display: none;
+      }
     }
   }
 
   ul {
     width: 630px;
 
-    @include smallMediumScreen { 
-        display: flex;
-        position: relative; 
+    @include smallMediumScreen {
+      display: flex;
+      position: relative;
       right: 6%;
-        width: 480px !important;
-        flex-wrap: wrap;
-  }
+      width: 480px !important;
+      flex-wrap: wrap;
+    }
 
-  @include iPhoneXrScreen { 
-    display: flex;
-    width: 350px !important;
-    flex-wrap: wrap;
+    @include iPhoneXrScreen {
+      display: flex;
+      width: 350px !important;
+      flex-wrap: wrap;
+    }
   }
-}
 
   ul li {
     display: flex;
@@ -105,19 +105,18 @@
     margin-left: 0vw;
     margin-top: 0.347vw;
   }
-  
+
   @keyframes floating {
     0% {
       transform: translate(0, 0vw);
     }
     50% {
-      transform: translate(0, .27vw);
+      transform: translate(0, 0.27vw);
     }
     100% {
       transform: translate(0, 0vw);
     }
   }
-
 
   .floating2 {
     animation-name: floating;
@@ -127,13 +126,13 @@
     margin-left: 0vw;
     margin-top: 0.347vw;
   }
-  
+
   @keyframes floating {
     0% {
       transform: translate(0, 0vw);
     }
     50% {
-      transform: translate(0, .27vw);
+      transform: translate(0, 0.27vw);
     }
     100% {
       transform: translate(0, -0vw);
@@ -149,18 +148,16 @@
     margin-left: 0vw;
     margin-top: 0.347vw;
   }
-  
+
   @keyframes floating {
     0% {
       transform: translate(0, 0vw);
     }
     50% {
-      transform: translate(0, .32vw);
+      transform: translate(0, 0.32vw);
     }
     100% {
       transform: translate(0, 0vw);
     }
   }
 }
-
-
