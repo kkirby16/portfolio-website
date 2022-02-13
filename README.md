@@ -12,7 +12,7 @@ Includes sections for "About", "Projects", "Blogs", and "Contact". My contact in
 
 ## Built with:
 
--React and custom SCSS
+-React, custom SCSS, and GSAP
 
 ## How to use the site:
 
