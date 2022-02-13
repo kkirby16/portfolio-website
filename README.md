@@ -8,7 +8,7 @@ Portfolio site built with React and Custom SCSS.<br><br>
 
 ## Overview:
 
-Includes sections for "about", "projects", "blogs", and "contact". My contact information is also included.
+Includes sections for "About", "Projects", "Blogs", and "Contact". My contact information is also included.
 
 ## Built with:
 
