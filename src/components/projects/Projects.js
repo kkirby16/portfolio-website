@@ -96,7 +96,13 @@ export default function Projects() {
                 className="githubIcon"
               />
             </a>
-            {/* <h3 class="project-info-flex-item live-site-text">Live</h3>{" "} */}
+            <a
+              href="https://nail-the-trail.herokuapp.com/"
+              className="project-info-flex-item live-site-link"
+              target="_blank"
+            >
+              <h3 class="live-site-text">Live</h3>
+            </a>{" "}
             <a
               href="https://www.youtube.com/watch?v=2kKjG923AMg"
               target="_blank"
