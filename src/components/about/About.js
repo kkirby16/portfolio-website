@@ -129,7 +129,7 @@ export default function About() {
           </li>
           <li>
             <Icon
-              icon="skill-icons:typescript"
+              icon="bxl:typescript"
               color="black"
               width="56"
               height="56"
