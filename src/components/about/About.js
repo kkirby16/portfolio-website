@@ -58,16 +58,16 @@ export default function About() {
           <li>
             <Icon
               icon="bx:bxl-react"
-              width="47"
-              height="47"
+              width="48"
+              height="48"
               className="floating1"
             />{" "}
           </li>
           <li>
             <Icon
               icon="bx:bxl-redux"
-              width="46"
-              height="46"
+              width="48"
+              height="48"
               className="floating2"
             />
           </li>
@@ -98,16 +98,16 @@ export default function About() {
           <li>
             <Icon
               icon="simple-icons:rubyonrails"
-              width="59.5"
-              height="59.5"
+              width="61"
+              height="61"
               className="floating3"
             />
           </li>
           <li>
             <Icon
               icon="devicon-plain:java-wordmark"
-              width="59.5"
-              height="59.5"
+              width="61"
+              height="61"
               className="floating1"
             />
           </li>
@@ -122,16 +122,17 @@ export default function About() {
           <li>
             <Icon
               icon="simple-icons:springboot"
-              width="59.5"
-              height="59.5"
+              width="59"
+              height="59"
               className="floating3"
             />
           </li>
           <li>
             <Icon
               icon="skill-icons:typescript"
-              width="59.5"
-              height="59.5"
+              color="black"
+              width="56"
+              height="56"
               className="floating1"
             />
           </li>
@@ -154,8 +155,8 @@ export default function About() {
           <li>
             <Icon
               icon="devicon-plain:bootstrap-wordmark"
-              width="44"
-              height="44"
+              width="47"
+              height="47"
               className="floating1"
             />
           </li>
@@ -205,8 +206,8 @@ export default function About() {
             <Icon
               icon="carbon:sql"
               color="black"
-              width="45"
-              height="45"
+              width="47"
+              height="47"
               className="floating1"
             />
           </li>
@@ -268,8 +269,8 @@ export default function About() {
             <Icon
               icon="logos:eclipse"
               color="black"
-              width="43"
-              height="43"
+              width="50"
+              height="50"
               className="floating3"
             />
           </li>
