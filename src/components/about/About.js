@@ -81,31 +81,7 @@ export default function About() {
           </li>
           <li>
             <Icon
-              icon="fa-brands:css3-alt"
-              width="43"
-              height="43"
-              className="floating1"
-            />
-          </li>
-          <li>
-            <Icon
-              icon="cib:sass-alt"
-              width="44"
-              height="44"
-              className="floating2"
-            />
-          </li>
-          <li>
-            <Icon
-              icon="cib:html5-shield"
-              width="43"
-              height="43"
-              className="floating3"
-            />
-          </li>
-          <li>
-            <Icon
-              icon="cib:ruby"
+              icon="cib:angular"
               width="42"
               height="42"
               className="floating1"
@@ -113,9 +89,81 @@ export default function About() {
           </li>
           <li>
             <Icon
+              icon="cib:ruby"
+              width="42"
+              height="42"
+              className="floating2"
+            />
+          </li>
+          <li>
+            <Icon
               icon="simple-icons:rubyonrails"
               width="59.5"
               height="59.5"
+              className="floating3"
+            />
+          </li>
+          <li>
+            <Icon
+              icon="devicon-plain:java-wordmark"
+              width="59.5"
+              height="59.5"
+              className="floating1"
+            />
+          </li>
+          <li>
+            <Icon
+              icon="devicon-plain:spring-wordmark"
+              width="59.5"
+              height="59.5"
+              className="floating2"
+            />
+          </li>
+          <li>
+            <Icon
+              icon="simple-icons:springboot"
+              width="59.5"
+              height="59.5"
+              className="floating3"
+            />
+          </li>
+          <li>
+            <Icon
+              icon="skill-icons:typescript"
+              width="59.5"
+              height="59.5"
+              className="floating1"
+            />
+          </li>
+          <li>
+            <Icon
+              icon="fa-brands:css3-alt"
+              width="43"
+              height="43"
+              className="floating2"
+            />
+          </li>
+          <li>
+            <Icon
+              icon="cib:sass-alt"
+              width="44"
+              height="44"
+              className="floating3"
+            />
+          </li>
+          <li>
+            <Icon
+              icon="devicon-plain:bootstrap-wordmark"
+              width="44"
+              height="44"
+              className="floating1"
+            />
+          </li>
+          <li>
+            <Icon
+              icon="cib:html5-shield"
+              width="43"
+              height="43"
               className="floating2"
             />
           </li>
@@ -130,10 +178,19 @@ export default function About() {
           </li>
           <li>
             <Icon
+              icon="devicon:junit-wordmark"
+              color="black"
+              width="47"
+              height="47"
+              className="floating1"
+            />
+          </li>
+          <li>
+            <Icon
               icon="cib:postgresql"
               width="43"
               height="43"
-              className="floating1"
+              className="floating2"
             />
           </li>
           <li>
@@ -141,7 +198,7 @@ export default function About() {
               icon="simple-icons:sqlite"
               width="43"
               height="43"
-              className="floating2"
+              className="floating3"
             />
           </li>
           <li>
@@ -150,16 +207,15 @@ export default function About() {
               color="black"
               width="45"
               height="45"
-              className="floating3"
+              className="floating1"
             />
           </li>
-
           <li>
             <Icon
               icon="file-icons:sinatra"
               width="44"
               height="44"
-              className="floating1"
+              className="floating2"
             />
           </li>
           <li>
@@ -168,7 +224,7 @@ export default function About() {
               color="black"
               width="43"
               height="43"
-              className="floating2"
+              className="floating3"
             />
           </li>
           <li>
@@ -176,7 +232,7 @@ export default function About() {
               icon="file-icons:netlify"
               width="43"
               height="43"
-              className="floating3"
+              className="floating1"
             />
           </li>
           <li>
@@ -185,18 +241,18 @@ export default function About() {
               color="black"
               width="43"
               height="43"
-              className="floating1"
+              className="floating2"
             />
           </li>
           <li>
-            <Icon icon="cib:git" width="43" height="43" className="floating2" />
+            <Icon icon="cib:git" width="43" height="43" className="floating3" />
           </li>
           <li>
             <Icon
               icon="el:wordpress"
               width="43"
               height="43"
-              className="floating3"
+              className="floating1"
             />
           </li>
           <li>
@@ -205,7 +261,16 @@ export default function About() {
               color="black"
               width="43"
               height="43"
-              className="floating1"
+              className="floating2"
+            />
+          </li>
+          <li>
+            <Icon
+              icon="logos:eclipse"
+              color="black"
+              width="43"
+              height="43"
+              className="floating3"
             />
           </li>
           <li>
@@ -214,7 +279,7 @@ export default function About() {
               color="black"
               width="43"
               height="43"
-              className="floating2"
+              className="floating1"
             />
           </li>
         </ul>
