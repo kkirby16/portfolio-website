@@ -53,13 +53,13 @@ export default function About() {
       <br />
       <br />
       <div className="skills">
-        <h2>Skills</h2>
+        <h2 className="skillsHeader">Skills</h2>
         <ul>
           <li>
             <Icon
               icon="bx:bxl-react"
-              width="48"
-              height="48"
+              width="49"
+              height="49"
               className="floating1"
             />{" "}
           </li>
@@ -98,24 +98,24 @@ export default function About() {
           <li>
             <Icon
               icon="simple-icons:rubyonrails"
-              width="61"
-              height="61"
+              width="62"
+              height="62"
               className="floating3"
             />
           </li>
           <li>
             <Icon
               icon="devicon-plain:java-wordmark"
-              width="61"
-              height="61"
+              width="62"
+              height="62"
               className="floating1"
             />
           </li>
           <li>
             <Icon
               icon="devicon-plain:spring-wordmark"
-              width="59.5"
-              height="59.5"
+              width="61"
+              height="61"
               className="floating2"
             />
           </li>
@@ -172,8 +172,8 @@ export default function About() {
             <Icon
               icon="eos-icons:api"
               color="black"
-              width="47"
-              height="47"
+              width="48"
+              height="48"
               className="floating3"
             />
           </li>
@@ -269,8 +269,8 @@ export default function About() {
             <Icon
               icon="logos:eclipse"
               color="black"
-              width="50"
-              height="50"
+              width="54"
+              height="54"
               className="floating3"
             />
           </li>
