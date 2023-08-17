@@ -98,8 +98,8 @@ export default function About() {
           <li>
             <Icon
               icon="simple-icons:rubyonrails"
-              width="62"
-              height="62"
+              width="64"
+              height="64"
               className="floating3"
             />
           </li>
@@ -269,8 +269,8 @@ export default function About() {
             <Icon
               icon="logos:eclipse"
               color="black"
-              width="54"
-              height="54"
+              width="58"
+              height="58"
               className="floating3"
             />
           </li>
