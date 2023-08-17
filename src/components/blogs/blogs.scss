@@ -89,6 +89,27 @@
     }
   }
 
+  .biggerSmallerButtons { 
+    animation-name: smallerBigger;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes smallerBigger {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1.115);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+
+    //transition: 0.5s;
+
   .arrowRight:hover {
     transform: rotate(180deg) scale(1.115);
     transition: 0.5s;
