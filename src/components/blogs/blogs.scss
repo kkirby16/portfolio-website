@@ -90,7 +90,7 @@
   }
 
   .biggerSmallerRight { 
-    animation-name: smallerBigger;
+    animation-name: smallerBiggerRight;
     animation-duration: 3.5s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
@@ -98,13 +98,13 @@
   }
 
   .biggerSmallerLeft { 
-    animation-name: smallerBigger;
+    animation-name: smallerBiggerLeft;
     animation-duration: 3.5s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
   }
 
-  @keyframes smallerBigger {
+  @keyframes smallerBiggerLeft {
     0% {
       transform: scale(1);
     }
@@ -113,6 +113,21 @@
     }
     100% {
       transform: scale(1);
+    }
+  }
+
+  @keyframes smallerBiggerRight {
+    0% {
+      transform: scale(1);
+      transform: rotate(180deg);
+    }
+    50% {
+      transform: scale(1.115);
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: scale(1);
+      transform: rotate(180deg);
     }
   }
 
