@@ -91,7 +91,7 @@
 
   .biggerSmallerRight { 
     animation-name: smallerBiggerRight;
-    animation-duration: 3.5s;
+    animation-duration: 3.2s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     transform: rotate(180deg);
@@ -99,7 +99,7 @@
 
   .biggerSmallerLeft { 
     animation-name: smallerBiggerLeft;
-    animation-duration: 3.5s;
+    animation-duration: 3.2s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
   }
@@ -118,20 +118,15 @@
 
   @keyframes smallerBiggerRight {
     0% {
-      transform: scale(1);
-      transform: rotate(180deg);
+      transform: scale(1) rotate(180deg);
     }
     50% {
-      transform: scale(1.115);
-      transform: rotate(180deg);
+      transform: scale(1.115) rotate(180deg);
     }
     100% {
-      transform: scale(1);
-      transform: rotate(180deg);
+      transform: scale(1) rotate(180deg);
     }
   }
-
-    //transition: 0.5s;
 
   .arrowRight:hover {
     transform: rotate(180deg) scale(1.115);
