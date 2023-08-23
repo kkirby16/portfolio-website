@@ -20,11 +20,18 @@
     justify-content: center;
   }
 
+  .about-description-container { 
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 38%;
+  }
+
   .about-description {
     display: flex;
     width: 760px;
 
-    font-size: 24px;
+    font-size: 21px;
     font-family: "futura-pt-21", sans-serif;
     font-weight: 100;
     z-index: 1;
