@@ -38,22 +38,25 @@ export default function About() {
       >
         About
       </h2>
-      <li className="about-description">
-        Full-stack software developer with experience as a Software Developer at
-        Infosys performing problem solving with Java, Spring, Angular, and CSS,
-        and a background in SaaS sales development.
-      </li>
-      <li className="about-description">
-        An adept analyst and communicator who continually aims to improve the
-        user experience. Bringing experience as an Associate Software Developer
-        at Infosys and 2+ years of SaaS sales development experience, possesses
-        ability to interface with external customers and prospects as well as
-        internally in an Agile software development environment.
-      </li>
-      <li className="about-description">
-        Seeking frontend or full-stack development roles that focus on
-        delivering valuable experiences to users.
-      </li>
+      <div className="about-description-container">
+        <li className="about-description">
+          Full-stack software developer with experience as a Software Developer
+          at Infosys performing problem solving with Java, Spring, Angular, and
+          CSS, and a background in SaaS sales development.
+        </li>
+        <li className="about-description">
+          An adept analyst and communicator who continually aims to improve the
+          user experience. Bringing experience as an Associate Software
+          Developer at Infosys and 2+ years of SaaS sales development
+          experience, possesses ability to interface with external customers and
+          prospects as well as internally in an Agile software development
+          environment.
+        </li>
+        <li className="about-description">
+          Seeking frontend or full-stack development roles that focus on
+          delivering valuable experiences to users.
+        </li>
+      </div>
       <br />
       <br />
       <br />
