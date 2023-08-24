@@ -59,8 +59,6 @@ export default function About() {
       </div>
       <br />
       <br />
-      <br />
-      <br />
       <div className="skills">
         <h2 className="skillsHeader">Skills</h2>
         <ul>
@@ -188,7 +186,7 @@ export default function About() {
           </li>
           <li>
             <Icon
-              icon="devicon:junit-wordmark"
+              icon="simple-icons:junit5"
               color="black"
               width="47"
               height="47"
@@ -276,10 +274,10 @@ export default function About() {
           </li>
           <li>
             <Icon
-              icon="logos:eclipse"
+              icon="devicon-plain:eclipse-wordmark"
               color="black"
-              width="58"
-              height="58"
+              width="62"
+              height="62"
               className="floating3"
             />
           </li>
