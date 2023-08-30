@@ -14,7 +14,7 @@
       -ms-flex-pack: top;
           justify-content: top;
   min-height: 100vh;
-  padding-top: 8%;
+  padding-top: 4.2%;
   padding-left: 36%;
 }
 
@@ -34,12 +34,26 @@
   }
 }
 
+.about .about-description-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 38%;
+}
+
 .about .about-description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 760px;
-  font-size: 24px;
+  font-size: 21px;
   font-family: "futura-pt-21", sans-serif;
   font-weight: 100;
   z-index: 1;
@@ -47,15 +61,15 @@
 
 @media (max-width: 885px) {
   .about .about-description {
-    width: 450px;
-    font-size: 20px;
+    width: 640px;
+    font-size: 18px;
   }
 }
 
 @media (max-width: 414px) {
   .about .about-description {
     width: 330px;
-    font-size: 19.5px;
+    font-size: 18px;
   }
 }
 
@@ -83,9 +97,9 @@
 @media (max-width: 885px) {
   .about .skills {
     position: relative;
-    bottom: 4.5%;
+    bottom: 2.5%;
     left: 2%;
-    width: 600px;
+    width: 620px;
   }
 }
 
@@ -95,8 +109,16 @@
   }
 }
 
+.about .skillsHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 27px;
+}
+
 .about ul {
   width: 630px;
+  padding-bottom: 5.5px;
 }
 
 @media (max-width: 885px) {
@@ -141,6 +163,36 @@
   margin-right: 2%;
 }
 
+@-webkit-keyframes floating {
+  0% {
+    -webkit-transform: translate(0, 0vw);
+            transform: translate(0, 0vw);
+  }
+  50% {
+    -webkit-transform: translate(0, 0.36vw);
+            transform: translate(0, 0.36vw);
+  }
+  100% {
+    -webkit-transform: translate(0, 0vw);
+            transform: translate(0, 0vw);
+  }
+}
+
+@keyframes floating {
+  0% {
+    -webkit-transform: translate(0, 0vw);
+            transform: translate(0, 0vw);
+  }
+  50% {
+    -webkit-transform: translate(0, 0.36vw);
+            transform: translate(0, 0.36vw);
+  }
+  100% {
+    -webkit-transform: translate(0, 0vw);
+            transform: translate(0, 0vw);
+  }
+}
+
 .about .floating1 {
   -webkit-animation-name: floating;
           animation-name: floating;
@@ -156,36 +208,6 @@
   margin-top: 0.347vw;
 }
 
-@-webkit-keyframes floating {
-  0% {
-    -webkit-transform: translate(0, 0vw);
-            transform: translate(0, 0vw);
-  }
-  50% {
-    -webkit-transform: translate(0, 0.27vw);
-            transform: translate(0, 0.27vw);
-  }
-  100% {
-    -webkit-transform: translate(0, 0vw);
-            transform: translate(0, 0vw);
-  }
-}
-
-@keyframes floating {
-  0% {
-    -webkit-transform: translate(0, 0vw);
-            transform: translate(0, 0vw);
-  }
-  50% {
-    -webkit-transform: translate(0, 0.27vw);
-            transform: translate(0, 0.27vw);
-  }
-  100% {
-    -webkit-transform: translate(0, 0vw);
-            transform: translate(0, 0vw);
-  }
-}
-
 .about .floating2 {
   -webkit-animation-name: floating;
           animation-name: floating;
@@ -197,21 +219,6 @@
           animation-timing-function: ease-in-out;
   margin-left: 0vw;
   margin-top: 0.347vw;
-}
-
-@keyframes floating {
-  0% {
-    -webkit-transform: translate(0, 0vw);
-            transform: translate(0, 0vw);
-  }
-  50% {
-    -webkit-transform: translate(0, 0.27vw);
-            transform: translate(0, 0.27vw);
-  }
-  100% {
-    -webkit-transform: translate(0, 0vw);
-            transform: translate(0, 0vw);
-  }
 }
 
 .about .floating3 {
@@ -227,20 +234,5 @@
           animation-timing-function: ease-in-out;
   margin-left: 0vw;
   margin-top: 0.347vw;
-}
-
-@keyframes floating {
-  0% {
-    -webkit-transform: translate(0, 0vw);
-            transform: translate(0, 0vw);
-  }
-  50% {
-    -webkit-transform: translate(0, 0.32vw);
-            transform: translate(0, 0.32vw);
-  }
-  100% {
-    -webkit-transform: translate(0, 0vw);
-            transform: translate(0, 0vw);
-  }
 }
 /*# sourceMappingURL=about.css.map */
