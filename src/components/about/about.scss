@@ -36,13 +36,13 @@
     font-weight: 100;
     z-index: 1;
     @include smallMediumScreen {
-      width: 450px;
-      font-size: 20px;
+      width: 640px;
+      font-size: 18px;
     }
 
     @include iPhoneXrScreen {
       width: 330px;
-      font-size: 19.5px;
+      font-size: 18px;
     }
   }
 
@@ -62,9 +62,9 @@
 
     @include smallMediumScreen {
       position: relative;
-      bottom: 4.5%;
+      bottom: 2.5%;
       left: 2%;
-      width: 600px;
+      width: 620px;
     }
 
     h2 {
@@ -123,7 +123,7 @@
       transform: translate(0, 0vw);
     }
     50% {
-      transform: translate(0, 0.27vw);
+      transform: translate(0, 0.38vw);
     }
     100% {
       transform: translate(0, 0vw);
@@ -139,18 +139,6 @@
     margin-top: 0.347vw;
   }
 
-  @keyframes floating {
-    0% {
-      transform: translate(0, 0vw);
-    }
-    50% {
-      transform: translate(0, 0.27vw);
-    }
-    100% {
-      transform: translate(0, -0vw);
-    }
-  }
-
   .floating3 {
     animation-name: floating;
     animation-duration: 5.6s;
@@ -159,17 +147,5 @@
     animation-timing-function: ease-in-out;
     margin-left: 0vw;
     margin-top: 0.347vw;
-  }
-
-  @keyframes floating {
-    0% {
-      transform: translate(0, 0vw);
-    }
-    50% {
-      transform: translate(0, 0.32vw);
-    }
-    100% {
-      transform: translate(0, 0vw);
-    }
   }
 }
