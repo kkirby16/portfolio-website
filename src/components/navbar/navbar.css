@@ -48,6 +48,12 @@
   display: flex;
 }
 
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: black;
+}
+
 .right-nav-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -65,7 +71,7 @@
   }
 }
 
-.hover-right-nav-link:after {
+.hover-underline-animation:after {
   content: '';
   position: absolute;
   width: 100%;
@@ -83,7 +89,7 @@
   transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
 }
 
-.right-nav-link:hover:after {
+.hover-underline-animation:hover:after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
   -webkit-transform-origin: bottom left;
