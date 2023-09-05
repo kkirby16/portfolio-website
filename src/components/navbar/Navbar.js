@@ -48,7 +48,7 @@ export default function Navbar() {
         </a>
         <div className="right-nav">
           <a
-            className="right-nav-link"
+            className="right-nav-link hover-underline-animation"
             href="#about"
             ref={(el) => {
               about = el;
@@ -57,7 +57,7 @@ export default function Navbar() {
             About
           </a>
           <a
-            className="right-nav-link"
+            className="right-nav-link hover-underline-animation"
             href="#projects"
             ref={(el) => {
               projects = el;
@@ -66,7 +66,7 @@ export default function Navbar() {
             Projects
           </a>
           <a
-            className="right-nav-link"
+            className="right-nav-link hover-underline-animation"
             href="#blogs"
             ref={(el) => {
               blogs = el;
