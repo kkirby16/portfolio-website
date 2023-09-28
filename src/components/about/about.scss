@@ -25,6 +25,10 @@
     flex-direction: column;
     justify-content: space-between;
     min-height: 38%;
+
+    @include smallMediumScreen {
+      min-height: 35%;
+    }
   }
 
   .about-description {
