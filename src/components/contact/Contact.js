@@ -96,7 +96,7 @@ export default function Contact() {
               style={{ color: "black" }}
               fontSize="large"
               sx={{
-                ":hover": {
+                "& :hover": {
                   color: "rgb(252, 247, 243)",
                 },
               }}
@@ -111,7 +111,7 @@ export default function Contact() {
                 style={{ color: "black" }}
                 fontSize="large"
                 sx={{
-                  ":hover": {
+                  "& :hover": {
                     color: "rgb(252, 247, 243",
                   },
                 }}
@@ -128,11 +128,6 @@ export default function Contact() {
                 color="black"
                 width="36.1"
                 height="36.1"
-                sx={{
-                  ":hover": {
-                    color: "rgb(252, 247, 243",
-                  },
-                }}
                 className="devtoAccountIcon"
               />
             </a>
