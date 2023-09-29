@@ -92,13 +92,31 @@ export default function Contact() {
       <div className="contactLinks">
         <div className="contactIcon">
           <a href="https://github.com/kkirby16" target="_blank">
-            <GitHubIcon style={{ color: "black" }} fontSize="large" />
+            <GitHubIcon
+              style={{ color: "black" }}
+              fontSize="large"
+              sx={{
+                ":hover": {
+                  color: "rgb(252, 247, 243)",
+                },
+              }}
+              className="githubAccountIcon"
+            />
           </a>
         </div>
         <div>
           <div className="contactIcon">
             <a href="https://www.linkedin.com/in/kevinpkirby/" target="_blank">
-              <LinkedInIcon style={{ color: "black" }} fontSize="large" />
+              <LinkedInIcon
+                style={{ color: "black" }}
+                fontSize="large"
+                sx={{
+                  ":hover": {
+                    color: "rgb(252, 247, 243",
+                  },
+                }}
+                className="linkedinAccountIcon"
+              />
             </a>
           </div>
         </div>
@@ -110,6 +128,12 @@ export default function Contact() {
                 color="black"
                 width="36.1"
                 height="36.1"
+                sx={{
+                  ":hover": {
+                    color: "rgb(252, 247, 243",
+                  },
+                }}
+                className="devtoAccountIcon"
               />
             </a>
           </div>
