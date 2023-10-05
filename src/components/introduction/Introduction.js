@@ -66,6 +66,7 @@ export default function Introduction() {
         <img className="design" src="taxi-715.png"></img>
       </div>
       <img src="diagonal-arrow-design.png" className="diagonalArrowDesign" />
+      <div className="icon-scroll"></div>
     </div>
   );
 }
