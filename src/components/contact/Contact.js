@@ -40,7 +40,7 @@ export default function Contact() {
   return (
     <div className="contact" id="contact">
       <section class="get-in-touch">
-        <h1 class="title">Contact me</h1>
+        <h1 class="title">Contact</h1>
         <form class="contact-form row" onSubmit={handleSubmit}>
           <div class="form-field col x-50">
             <input
@@ -48,7 +48,7 @@ export default function Contact() {
               name="from_name"
               class="input-text js-input"
               type="text"
-              placeholder="Name"
+              placeholder="Your Name"
               value={toSend.from_name}
               onChange={handleChange}
               required
@@ -60,7 +60,7 @@ export default function Contact() {
               name="from_email"
               class="input-text js-input"
               type="email"
-              placeholder="Email"
+              placeholder="Your Email"
               value={toSend.from_email}
               onChange={handleChange}
               required
@@ -96,8 +96,12 @@ export default function Contact() {
               style={{ color: "black" }}
               fontSize="large"
               sx={{
-                "& :hover": {
-                  color: "rgb(252, 247, 243)",
+                "&:hover": {
+                  paddingBottom: "11.5%",
+                  transition: ".28s",
+                },
+                "&:not(:hover)": {
+                  transition: ".5s",
                 },
               }}
               className="githubAccountIcon"
@@ -111,8 +115,13 @@ export default function Contact() {
                 style={{ color: "black" }}
                 fontSize="large"
                 sx={{
-                  "& :hover": {
-                    color: "rgb(252, 247, 243",
+                  "&:hover": {
+                    transform: "translateY(-11.5%)",
+                    transition: ".28s",
+                  },
+
+                  ":not(&:hover)": {
+                    transition: ".5s",
                   },
                 }}
                 className="linkedinAccountIcon"
