@@ -32,8 +32,16 @@
   padding-bottom: 12px;
 }
 
-.devtoAccountIcon:hover {
-color: rgb(252, 247, 243),
+.devtoAccountIcon {
+  &:hover {  
+  transform: translateY(-11.5%);
+  transition: .28s;
+  }
+
+  &:not(:hover) { 
+  transition: .5s;
+
+  }
 }
 
 @import url(https://fonts.googleapis.com/css?family=Raleway:300);
@@ -97,14 +105,12 @@ body {
   }
 
   .title {
-    text-align: left;
-    font-family: Raleway, sans-serif;
-    color: rgb(252, 247, 243);
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 36px;
-    line-height: 48px;
+    font-family: "futura-pt-21", sans-serif;
+    color: black;
+    font-size: 58px;
     padding-bottom: 48px;
+    position: relative;
+    left: 9.5%;
   }
 }
 
@@ -147,7 +153,8 @@ body {
     font-size: 18px;
     line-height: 26px;
     font-weight: 400;
-    color: #d0d0d0;
+    color: rgb(252, 247, 243);
+    opacity: .87;
     cursor: text;
     transition: transform 0.2s ease-in-out;
   }
