@@ -77,7 +77,11 @@ const Blogs = (props) => {
               <p>
                 {blog.readable_publish_date} | {blog.tags}
               </p>
-              <p>{blog.public_reactions_count} reactions</p>
+              <p>
+                {blog.public_reactions_count == 1
+                  ? blog.public_reactions_count + " reaction"
+                  : blog.public_reactions_count + " reactions"}
+              </p>
             </div>
           </div>
         ))}
