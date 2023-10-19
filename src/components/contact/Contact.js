@@ -1,6 +1,7 @@
 import "./contact.scss";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import EmailIcon from "@mui/icons-material/Email";
 import { Icon } from "@iconify/react";
 import React, { useState, useRef, useEffect } from "react";
 import { send } from "emailjs-com";
@@ -97,7 +98,7 @@ export default function Contact() {
               fontSize="large"
               sx={{
                 "&:hover": {
-                  paddingBottom: "11.5%",
+                  paddingBottom: "10.6%",
                   transition: ".28s",
                 },
                 "&:not(:hover)": {
@@ -116,7 +117,7 @@ export default function Contact() {
                 fontSize="large"
                 sx={{
                   "&:hover": {
-                    transform: "translateY(-11.5%)",
+                    transform: "translateY(-10.6%)",
                     transition: ".28s",
                   },
 
@@ -138,6 +139,26 @@ export default function Contact() {
                 width="36.1"
                 height="36.1"
                 className="devtoAccountIcon"
+              />
+            </a>
+          </div>
+        </div>
+        <div>
+          <div className="contactIcon">
+            <a href="mailto: kevin.pkirby4@gmail.com" target="_blank">
+              <EmailIcon
+                style={{ color: "black" }}
+                fontSize="large"
+                sx={{
+                  "&:hover": {
+                    transform: "translateY(-10.6%)",
+                    transition: ".28s",
+                  },
+
+                  ":not(&:hover)": {
+                    transition: ".5s",
+                  },
+                }}
               />
             </a>
           </div>
