@@ -6,6 +6,8 @@ import { Icon } from "@iconify/react";
 import React, { useState, useRef, useEffect } from "react";
 import { send } from "emailjs-com";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import Tooltip from "@mui/material/Tooltip";
+import Fade from "@material-ui/core/Fade";
 
 export default function Contact() {
   const [toSend, setToSend] = useState({
@@ -91,77 +93,141 @@ export default function Contact() {
         </form>
       </section>
       <div className="contactLinks">
-        <div className="contactIcon">
-          <a href="https://github.com/kkirby16" target="_blank">
-            <GitHubIcon
-              style={{ color: "black" }}
-              fontSize="large"
-              sx={{
-                "&:hover": {
-                  paddingBottom: "10.6%",
-                  transition: ".28s",
-                },
-                "&:not(:hover)": {
-                  transition: ".5s",
-                },
-              }}
-              className="githubAccountIcon"
-            />
-          </a>
-        </div>
-        <div>
+        <Tooltip
+          title="GitHub"
+          placement="top"
+          componentsProps={{
+            tooltip: {
+              sx: {
+                bgcolor: "#0d0d0d",
+                color: "white",
+              },
+            },
+          }}
+          TransitionComponent={Fade}
+          TransitionProps={{ timeout: 0 }}
+        >
           <div className="contactIcon">
-            <a href="https://www.linkedin.com/in/kevinpkirby/" target="_blank">
-              <LinkedInIcon
+            <a href="https://github.com/kkirby16" target="_blank">
+              <GitHubIcon
                 style={{ color: "black" }}
                 fontSize="large"
                 sx={{
                   "&:hover": {
-                    transform: "translateY(-10.6%)",
+                    paddingBottom: "10.6%",
                     transition: ".28s",
                   },
-
-                  ":not(&:hover)": {
+                  "&:not(:hover)": {
                     transition: ".5s",
                   },
                 }}
-                className="linkedinAccountIcon"
+                className="githubAccountIcon"
               />
             </a>
           </div>
-        </div>
-        <div>
-          <div className="contactIcon">
-            <a href="https://www.dev.to/kkirby16" target="_blank">
-              <Icon
-                icon="bx:bxl-dev-to"
-                color="black"
-                width="36.1"
-                height="36.1"
-                className="devtoAccountIcon"
-              />
-            </a>
-          </div>
-        </div>
-        <div>
-          <div className="contactIcon">
-            <a href="mailto: kevin.pkirby4@gmail.com" target="_blank">
-              <EmailIcon
-                style={{ color: "black" }}
-                fontSize="large"
-                sx={{
-                  "&:hover": {
-                    transform: "translateY(-10.6%)",
-                    transition: ".28s",
-                  },
+        </Tooltip>
 
-                  ":not(&:hover)": {
-                    transition: ".5s",
-                  },
-                }}
-              />
-            </a>
-          </div>
+        <div>
+          <Tooltip
+            title="LinkedIn"
+            placement="top"
+            componentsProps={{
+              tooltip: {
+                sx: {
+                  bgcolor: "#0d0d0d",
+                  color: "white",
+                },
+              },
+            }}
+            TransitionComponent={Fade}
+            TransitionProps={{ timeout: 0 }}
+          >
+            <div className="contactIcon">
+              <a
+                href="https://www.linkedin.com/in/kevinpkirby/"
+                target="_blank"
+              >
+                <LinkedInIcon
+                  style={{ color: "black" }}
+                  fontSize="large"
+                  sx={{
+                    "&:hover": {
+                      transform: "translateY(-10.6%)",
+                      transition: ".28s",
+                    },
+
+                    ":not(&:hover)": {
+                      transition: ".5s",
+                    },
+                  }}
+                  className="linkedinAccountIcon"
+                />
+              </a>
+            </div>
+          </Tooltip>
+        </div>
+        <div>
+          <Tooltip
+            title="DevTo"
+            placement="top"
+            componentsProps={{
+              tooltip: {
+                sx: {
+                  bgcolor: "#0d0d0d",
+                  color: "white",
+                },
+              },
+            }}
+            TransitionComponent={Fade}
+            TransitionProps={{ timeout: 0 }}
+          >
+            <div className="contactIcon">
+              <a href="https://www.dev.to/kkirby16" target="_blank">
+                <Icon
+                  icon="bx:bxl-dev-to"
+                  color="black"
+                  width="36.1"
+                  height="36.1"
+                  className="devtoAccountIcon"
+                />
+              </a>
+            </div>
+          </Tooltip>
+        </div>
+        <div>
+          <Tooltip
+            title="Email me"
+            placement="top"
+            componentsProps={{
+              tooltip: {
+                sx: {
+                  bgcolor: "#0d0d0d",
+                  color: "white",
+                },
+              },
+            }}
+            TransitionComponent={Fade}
+            TransitionProps={{ timeout: 0 }}
+          >
+            <div className="contactIcon">
+              <a href="mailto: kevin.pkirby4@gmail.com" target="_blank">
+                <EmailIcon
+                  style={{ color: "black" }}
+                  fontSize="large"
+                  sx={{
+                    "&:hover": {
+                      transform: "translateY(-10.6%)",
+                      transition: ".28s",
+                    },
+
+                    ":not(&:hover)": {
+                      transition: ".5s",
+                    },
+                  }}
+                />
+              </a>
+            </div>
+          </Tooltip>
         </div>
       </div>
     </div>
