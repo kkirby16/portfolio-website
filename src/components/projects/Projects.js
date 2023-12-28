@@ -2,11 +2,15 @@ import "./projects.scss";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { Icon } from "@iconify/react";
 import YouTubeIcon from "@mui/icons-material/YouTube";
+import Tooltip from "@mui/material/Tooltip";
+import Fade from "@material-ui/core/Fade";
 
 export default function Projects() {
   return (
     <div className="projects" id="projects">
-      <h1 className="projectsHeader">Projects</h1>
+      <h1 className="projectsHeader">
+        Projects <span>&#10230;</span>
+      </h1>
       <div className="projectsContainer">
         <div className="project">
           <div className="project-info">
@@ -16,24 +20,82 @@ export default function Projects() {
               target="_blank"
               class="project-info-flex-item"
             >
-              <GitHubIcon
-                style={{ color: "black" }}
-                fontSize="medium"
-                className="githubIcon"
-              />
+              <Tooltip
+                title="GitHub"
+                placement="top"
+                arrow
+                TransitionComponent={Fade}
+                TransitionProps={{ timeout: 0 }}
+                componentsProps={{
+                  tooltip: {
+                    sx: {
+                      bgcolor: "#0d0d0d",
+                      color: "white",
+                    },
+                  },
+                }}
+                popperprops={{
+                  modifiers: [
+                    {
+                      name: "offset",
+                      options: {
+                        offset: [0, 20],
+                      },
+                    },
+                  ],
+                }}
+              >
+                <GitHubIcon
+                  style={{ color: "black" }}
+                  fontSize="medium"
+                  aria-label="github"
+                  className="githubIcon"
+                />
+              </Tooltip>
             </a>
             <a
               href="https://photo-sharer-kkirby16.netlify.app/"
               className="project-info-flex-item live-site-link"
               target="_blank"
             >
-              <h3 class="live-site-text">Live</h3>
+              <Tooltip
+                title="Live Site"
+                placement="top"
+                TransitionComponent={Fade}
+                TransitionProps={{ timeout: 0 }}
+                componentsProps={{
+                  tooltip: {
+                    sx: {
+                      bgcolor: "#0d0d0d",
+                      color: "white",
+                    },
+                  },
+                }}
+              >
+                <h3 class="live-site-text">Live</h3>
+              </Tooltip>
             </a>{" "}
             <a href="https://youtu.be/cJb1p153Y-0" target="_blank">
-              <YouTubeIcon
-                style={{ color: "black" }}
-                className="youtubeIcon project-info-flex-item"
-              />
+              <Tooltip
+                title="Demo Video"
+                placement="top"
+                arrow
+                TransitionComponent={Fade}
+                TransitionProps={{ timeout: 0 }}
+                componentsProps={{
+                  tooltip: {
+                    sx: {
+                      bgcolor: "#0d0d0d",
+                      color: "white",
+                    },
+                  },
+                }}
+              >
+                <YouTubeIcon
+                  style={{ color: "black" }}
+                  className="youtubeIcon project-info-flex-item"
+                />
+              </Tooltip>
             </a>
           </div>
           <div className="imageContainer">
@@ -56,18 +118,50 @@ export default function Projects() {
               target="_blank"
               class="project-info-flex-item"
             >
-              <GitHubIcon
-                style={{ color: "black" }}
-                fontSize="medium"
-                className="githubIcon"
-              />
+              <Tooltip
+                title="GitHub"
+                placement="top"
+                arrow
+                TransitionComponent={Fade}
+                TransitionProps={{ timeout: 0 }}
+                componentsProps={{
+                  tooltip: {
+                    sx: {
+                      bgcolor: "#0d0d0d",
+                      color: "white",
+                    },
+                  },
+                }}
+              >
+                <GitHubIcon
+                  style={{ color: "black" }}
+                  fontSize="medium"
+                  className="githubIcon"
+                />
+              </Tooltip>
             </a>
             {/* <h3 class="project-info-flex-item live-site-text">Live</h3>{" "} */}
             <a href="https://youtu.be/WlAL8AUhsrk" target="_blank">
-              <YouTubeIcon
-                style={{ color: "black" }}
-                className="youtubeIcon project-info-flex-item"
-              />
+              <Tooltip
+                title="Demo Video"
+                placement="top"
+                arrow
+                TransitionComponent={Fade}
+                TransitionProps={{ timeout: 0 }}
+                componentsProps={{
+                  tooltip: {
+                    sx: {
+                      bgcolor: "#0d0d0d",
+                      color: "white",
+                    },
+                  },
+                }}
+              >
+                <YouTubeIcon
+                  style={{ color: "black" }}
+                  className="youtubeIcon project-info-flex-item"
+                />
+              </Tooltip>
             </a>
           </div>
           <div className="imageContainer">
@@ -90,27 +184,75 @@ export default function Projects() {
               target="_blank"
               class="project-info-flex-item"
             >
-              <GitHubIcon
-                style={{ color: "black" }}
-                fontSize="medium"
-                className="githubIcon"
-              />
+              <Tooltip
+                title="GitHub"
+                placement="top"
+                arrow
+                TransitionComponent={Fade}
+                TransitionProps={{ timeout: 0 }}
+                componentsProps={{
+                  tooltip: {
+                    sx: {
+                      bgcolor: "#0d0d0d",
+                      color: "white",
+                    },
+                  },
+                }}
+              >
+                <GitHubIcon
+                  style={{ color: "black" }}
+                  fontSize="medium"
+                  className="githubIcon"
+                />
+              </Tooltip>
             </a>
             <a
               href="https://nail-the-trail.herokuapp.com/"
               className="project-info-flex-item live-site-link"
               target="_blank"
             >
-              <h3 class="live-site-text">Live</h3>
+              <Tooltip
+                title="Live Site"
+                placement="top"
+                arrow
+                TransitionComponent={Fade}
+                TransitionProps={{ timeout: 0 }}
+                componentsProps={{
+                  tooltip: {
+                    sx: {
+                      bgcolor: "#0d0d0d",
+                      color: "white",
+                    },
+                  },
+                }}
+              >
+                <h3 class="live-site-text">Live</h3>
+              </Tooltip>
             </a>{" "}
             <a
               href="https://www.youtube.com/watch?v=2kKjG923AMg"
               target="_blank"
             >
-              <YouTubeIcon
-                style={{ color: "black" }}
-                className="youtubeIcon project-info-flex-item"
-              />
+              <Tooltip
+                title="Demo Video"
+                placement="top"
+                arrow
+                TransitionComponent={Fade}
+                TransitionProps={{ timeout: 0 }}
+                componentsProps={{
+                  tooltip: {
+                    sx: {
+                      bgcolor: "#0d0d0d",
+                      color: "white",
+                    },
+                  },
+                }}
+              >
+                <YouTubeIcon
+                  style={{ color: "black" }}
+                  className="youtubeIcon project-info-flex-item"
+                />
+              </Tooltip>
             </a>
           </div>
           <div className="imageContainer">
