@@ -9,7 +9,7 @@ export default function Projects() {
   return (
     <div className="projects" id="projects">
       <h1 className="projectsHeader">
-        Projects <span>&#10230;</span>
+        Projects <span class="arrow">&#10230;</span>
       </h1>
       <div className="projectsContainer">
         <div className="project">
