@@ -5,6 +5,8 @@ import About from "./components/about/About";
 import Projects from "./components/projects/Projects";
 import Blogs from "./components/blogs/Blogs";
 import Contact from "./components/contact/Contact";
+import ScrollToTop from "react-scroll-to-top";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./app.scss";
 
 function App() {
