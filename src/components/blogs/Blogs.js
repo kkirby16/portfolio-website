@@ -1,5 +1,7 @@
 import "./blogs.scss";
 import React, { useState } from "react";
+import Tooltip from "@mui/material/Tooltip";
+import Fade from "@material-ui/core/Fade";
 
 const Blogs = (props) => {
   const [currentBlog, setCurrentBlog] = useState(0);
@@ -50,16 +52,47 @@ const Blogs = (props) => {
   return (
     <div className="blogs" id="blogs">
       <h1 className="blogsTitle">Blogs</h1>
-      <img
-        src="icons8-back-arrow-50.png"
-        className="arrowLeft biggerSmallerLeft"
-        onClick={() => handleClick("left")}
-      />
-      <img
-        src="icons8-back-arrow-50.png"
-        className="arrowRight biggerSmallerRight"
-        onClick={() => handleClick("right")}
-      />
+      <Tooltip
+        title="See blog to the left"
+        placement="top"
+        TransitionComponent={Fade}
+        TransitionProps={{ timeout: 0 }}
+        componentsProps={{
+          tooltip: {
+            sx: {
+              bgcolor: "#0d0d0d",
+              color: "white",
+            },
+          },
+        }}
+      >
+        <img
+          src="icons8-back-arrow-50.png"
+          className="arrowLeft biggerSmallerLeft"
+          onClick={() => handleClick("left")}
+        />
+      </Tooltip>
+      <Tooltip
+        title="See blog to the right"
+        placement="top"
+        TransitionComponent={Fade}
+        TransitionProps={{ timeout: 0 }}
+        componentsProps={{
+          tooltip: {
+            sx: {
+              bgcolor: "#0d0d0d",
+              color: "white",
+            },
+          },
+        }}
+      >
+        <img
+          src="icons8-back-arrow-50.png"
+          className="arrowRight biggerSmallerRight"
+          onClick={() => handleClick("right")}
+        />
+      </Tooltip>
+
       <div
         className="slider"
         style={{ transform: `translateX(-${currentBlog * 100}vw)` }} //won't move anywhere initially because initial state is set to 0, and 0 * 100 is still 0.
